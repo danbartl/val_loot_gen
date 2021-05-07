@@ -1,7 +1,7 @@
 
 creatures_to_dust <- fread("rawdata/creatures_to_dust.csv")
 
-drop_base <- creatures_to_dust[,.(creature_id=paste0(name,"_",stars),magic_dust)] %>%  unique
+drop_base <- creatures_to_dust[,.(creature_id=paste0(name,"__",stars),magic_dust)] %>%  unique
 drop_base[,expected_count:=seq(expected_drops[1],expected_drops[2],length.out=.N)]
 
 
@@ -61,14 +61,14 @@ drop_dt2[,probabilities:=probabilities*100]
 drop_dt2[,drop_prob:=lapply(transpose(.(drops,probabilities)), as.list)]
 
 valheim_melt2 <- drop_dt2[probabilities>0,.(Drops=combineListsAsOne(drop_prob)),by=.(creature_id)]
-valheim_melt2[,c("Object","Level"):=tstrsplit(creature_id,"_")]
+valheim_melt2[,c("Object","Level"):=tstrsplit(creature_id,"__")]
 valheim_melt2[,Level:=as.numeric(Level)+1]
 valheim_melt2[,creature_id:=NULL]
 
 target2 <- drop_dt2[,.(actual_count=sum(probabilities*drops)),by=.(magic_dust,creature_id)]
 
 target_values[target2,on="creature_id",correct_count:=i.actual_count]
-target_values[,c("Object","Level"):=tstrsplit(creature_id,"_")]
+target_values[,c("Object","Level"):=tstrsplit(creature_id,"__")]
 target_values[,Level:=as.numeric(Level)+1]
 target_values[,lognorm_rounded:=lognorm_rounded*100]
 target_values[,item_id:=paste0("Tier",item_id-1,"Mats")]
@@ -99,6 +99,6 @@ require("readr")
 mystring <- read_file("rawdata/loottables_077_edited.json")
 valheim_export <- substring(valheim_export,4,nchar(valheim_export)-2)
 # 
-mystring2 <- str_replace_all(mystring,"INSERTLOOT",valheim_export)
+mystring <- str_replace_all(mystring,"INSERTLOOT",valheim_export)
 # 
-write(mystring2, "output/loottables.json")
+write(mystring, "output/loottables.json")

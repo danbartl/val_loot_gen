@@ -34,7 +34,7 @@ cdmg3[damage<0,damage:=0]
 creatures_short[,hp:=as.numeric(hp1)]
 creatures_short[,hp1:=NULL]
 creatures_edited <- merge(creatures_short,cdmg3,by="name")
-
+setkeyv(creatures_edited,"name")
 
 creatures_edited["Eikthyr",damage:=30]
 creatures_edited["The Elder",damage:=70]
@@ -56,6 +56,17 @@ creatures_edited[name %in% c("Stone Golem"),accuracy:=1.6]
 creatures_edited[name %in% c("Moder","Yagluth"),accuracy:=3]
 creatures_edited[name=="Deathsquito",accuracy:=0.1]
 creatures_edited[name=="Wolf",accuracy:=0.5]
+creatures_edited[name=="Yagluth",name:="GoblinKing"]
+creatures_edited[name=="The Elder",name:="gd_king"]
+creatures_edited[name=="Greydwarf Brute",name:="Greydwarf_Elite"]
+creatures_edited[name=="Greydwarf Shaman",name:="Greydwarf_Shaman"]
+creatures_edited[name=="Rancid Remains",name:="Skeleton_Poison"]
+creatures_edited[name%like%"Leviathan",name:="Leviathan"]
+creatures_edited[name%like%"Fuling Shaman",name:="GoblinShaman"]
+creatures_edited[name%like%"Fuling Berserker",name:="GoblinBrute"]
+creatures_edited[name%like%"Draugr Elite",name:="Draugr_Elite"]
+creatures_edited[name%like%"Fuling$",name:="Goblin"]
+
 
 fwrite(creatures_edited,"rawdata/creatures_modified.csv")
 

@@ -1,727 +1,365 @@
-{
-
-  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-  // MAGIC EFFECT COUNTS
-
-  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-  "MagicEffectsCount": {
-
-    "Magic":     [ [1, 80], [2, 18], [3, 2] ],
-
-    "Rare":      [ [2, 80], [3, 18], [4, 2] ],
-
-    "Epic":      [ [3, 80], [4, 18], [5, 2] ],
-
-    "Legendary": [ [4, 80], [5, 18], [6, 2] ]
-
-  },
-
-
-
-  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-  // ITEM RESTRICTIONS
-
-  //   - It's not recommended to change any of these, but if you wanted to allow Dyrnwyn or tankards for some reason,
-
-  //     remove them from this list. You really shouldn't remove Unarmed or CAPE TEST from this list.
-
-  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-  "RestrictedItems": [
-
-    "$item_tankard",
-
-    "$item_tankard_odin",
-
-    "Unarmed",
-
-    "CAPE TEST",
-
-    "Cheat sword",
-
-    "$item_sword_fire",
-
-    "$item_shield_iron_square"
-
-  ],
-
-
-
-  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-  // ITEM SETS
-
-  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-  "ItemSets": [
-
-
-
-    // Enchanting Mats
-
-    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-    {
-
-      "Name": "EnchantingMats",
-
-      "Loot": [
-
-        { "Item": "Tier0Mats" },
-
-        { "Item": "Tier1Mats" },
-
-        { "Item": "Tier2Mats" },
-
-        { "Item": "Tier3Mats" }
-
-      ]
-
-    },
-
-    {
-
-      "Name": "Tier0Mats",
-
-      "Loot": [
-
-        { "Item": "DustMagic"    },
-
-        { "Item": "EssenceMagic" },
-
-        { "Item": "ReagentMagic" }
-
-      ]
-
-    },
-
-    {
-
-      "Name": "Tier1Mats",
-
-      "Loot": [
-
-        { "Item": "DustRare"    },
-
-        { "Item": "EssenceRare" },
-
-        { "Item": "ReagentRare" }
-
-      ]
-
-    },
-
-    {
-
-      "Name": "Tier2Mats",
-
-      "Loot": [
-
-        { "Item": "DustEpic"    },
-
-        { "Item": "EssenceEpic" },
-
-        { "Item": "ReagentEpic" }
-
-      ]
-
-    },
-
-    {
-
-      "Name": "Tier3Mats",
-
-      "Loot": [
-
-        { "Item": "DustLegendary"    },
-
-        { "Item": "EssenceLegendary" },
-
-        { "Item": "ReagentLegendary" }
-
-      ]
-
-    },
-
-    {
-
-      "Name": "EnchantingRunestones",
-
-      "Loot": [
-
-        { "Item": "RunestoneMagic"     },
-
-        { "Item": "RunestoneRare"      },
-
-        { "Item": "RunestoneEpic"      },
-
-        { "Item": "RunestoneLegendary" }
-
-      ]
-
-    },
-
-    {
-
-      "Name": "Tier0Runestone",
-
-      "Loot": [ { "Item": "RunestoneMagic" } ]
-
-    },
-
-    {
-
-      "Name": "Tier1Runestone",
-
-      "Loot": [ { "Item": "RunestoneRare" } ]
-
-    },
-
-    {
-
-      "Name": "Tier2Runestone",
-
-      "Loot": [ { "Item": "RunestoneEpic" } ]
-
-    },
-
-    {
-
-      "Name": "Tier3Runestone",
-
-      "Loot": [ { "Item": "RunestoneLegendary" } ]
-
-    },
-
-    {
-
-      "Name": "ModUtility",
-
-      "Loot": [
-
-        { "Item": "LeatherBelt"  },
-
-        { "Item": "SilverRing"   },
-
-        { "Item": "GoldRubyRing" }
-
-      ]
-
-    },
-
-
-
-    // Tier 0 Items
-
-    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-    {
-
-      "Name": "Tier0Weapons",
-
-      "Loot": [
-
-        { "Item": "Club"     },
-
-        { "Item": "AxeStone" },
-
-        { "Item": "Torch"    }
-
-      ]
-
-    },
-
-    {
-
-      "Name": "Tier0Tools",
-
-      "Loot": [
-
-        { "Item": "Hammer" },
-
-        { "Item": "Hoe"    }
-
-      ]
-
-    },
-
-    {
-
-      "Name": "Tier0Armor",
-
-      "Loot": [
-
-        { "Item": "ArmorRagsLegs"  },
-
-        { "Item": "ArmorRagsChest" }
-
-      ]
-
-    },
-
-    {
-
-      "Name": "Tier0Shields",
-
-      "Loot": [
-
-        { "Item": "ShieldWood"      },
-
-        { "Item": "ShieldWoodTower" }
-
-      ]
-
-    },
-
-    {
-
-      "Name": "Tier0Everything",
-
-      "Loot": [
-
-        { "Item": "Tier0Weapons" },
-
-        { "Item": "Tier0Tools"   },
-
-        { "Item": "Tier0Armor"   },
-
-        { "Item": "Tier0Shields" }
-
-      ]
-
-    },
-
-
-
-    // Tier 1 Items
-
-    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-    {
-
-      "Name": "Tier1Weapons",
-
-      "Loot": [
-
-        { "Item": "AxeFlint",   "Rarity": [ 99, 1, 0, 0 ] },
-
-        { "Item": "SpearFlint", "Rarity": [ 99, 1, 0, 0 ] },
-
-        { "Item": "KnifeFlint", "Rarity": [ 99, 1, 0, 0 ] },
-
-        { "Item": "Bow",        "Rarity": [ 99, 1, 0, 0 ] }
-
-      ]
-
-    },
-
-    {
-
-      "Name": "Tier1Armor",
-
-      "Loot": [
-
-        { "Item": "ArmorLeatherLegs",  "Rarity": [ 99, 1, 0, 0 ] },
-
-        { "Item": "ArmorLeatherChest", "Rarity": [ 99, 1, 0, 0 ] },
-
-        { "Item": "HelmetLeather",     "Rarity": [ 99, 1, 0, 0 ] },
-
-        { "Item": "CapeDeerHide",      "Rarity": [ 99, 1, 0, 0 ] }
-
-      ]
-
-    },
-
-    {
-
-      "Name": "Tier1Tools",
-
-      "Loot": [
-
-        { "Item": "PickaxeAntler", "Rarity": [ 99, 1, 0, 0 ] }
-
-      ]
-
-    },
-
-    {
-
-      "Name": "Tier1Everything",
-
-      "Loot": [
-
-        { "Item": "Tier1Weapons" },
-
-        { "Item": "Tier1Armor"   },
-
-        { "Item": "Tier1Tools"   }
-
-      ]
-
-    },
-
-
-
-    // Tier 2 Items
-
-    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-    {
-
-      "Name": "TrollArmor",
-
-      "Loot": [
-
-        { "Item": "ArmorTrollLeatherLegs",  "Rarity": [ 95, 5, 0, 0 ] },
-
-        { "Item": "ArmorTrollLeatherChest", "Rarity": [ 95, 5, 0, 0 ] },
-
-        { "Item": "HelmetTrollLeather",     "Rarity": [ 95, 5, 0, 0 ] },
-
-        { "Item": "CapeTrollHide",          "Rarity": [ 95, 5, 0, 0 ] }
-
-      ]
-
-    },
-
-    {
-
-      "Name": "Tier2Weapons",
-
-      "Loot": [
-
-        { "Item": "KnifeCopper",       "Weight": 1, "Rarity": [ 95, 5, 0, 0 ] },
-
-        { "Item": "SledgeStagbreaker", "Weight": 1, "Rarity": [ 95, 5, 0, 0 ] },
-
-        { "Item": "SwordBronze",       "Weight": 1, "Rarity": [ 95, 5, 0, 0 ] },
-
-        { "Item": "AxeBronze",         "Weight": 1, "Rarity": [ 95, 5, 0, 0 ] },
-
-        { "Item": "MaceBronze",        "Weight": 1, "Rarity": [ 95, 5, 0, 0 ] },
-
-        { "Item": "AtgeirBronze",      "Weight": 1, "Rarity": [ 95, 5, 0, 0 ] },
-
-        { "Item": "SpearBronze",       "Weight": 1, "Rarity": [ 95, 5, 0, 0 ] },
-
-        { "Item": "BowFineWood",       "Weight": 1, "Rarity": [ 95, 5, 0, 0 ] },
-
-        { "Item": "KnifeChitin",       "Weight": 1, "Rarity": [ 95, 5, 0, 0 ] },
-
-        { "Item": "SpearChitin",       "Weight": 1, "Rarity": [ 95, 5, 0, 0 ] }
-
-      ]
-
-    },
-
-    {
-
-      "Name": "Tier2Armor",
-
-      "Loot": [
-
-        { "Item": "ArmorBronzeLegs",  "Rarity": [ 95, 5, 0, 0 ] },
-
-        { "Item": "ArmorBronzeChest", "Rarity": [ 95, 5, 0, 0 ] },
-
-        { "Item": "HelmetBronze",     "Rarity": [ 95, 5, 0, 0 ] }
-
-      ]
-
-    },
-
-    {
-
-      "Name": "Tier2Shields",
-
-      "Loot": [
-
-        { "Item": "ShieldBronzeBuckler", "Rarity": [ 95, 5, 0, 0 ] }
-
-      ]
-
-    },
-
-    {
-
-      "Name": "Tier2Tools",
-
-      "Loot": [
-
-        { "Item": "PickaxeBronze", "Rarity": [ 95, 5, 0, 0 ] },
-
-        { "Item": "Cultivator",    "Rarity": [ 95, 5, 0, 0 ] }
-
-      ]
-
-    },
-
-    {
-
-      "Name": "Tier2Everything",
-
-      "Loot": [
-
-        { "Item": "TrollArmor"   },
-
-        { "Item": "Tier2Weapons" },
-
-        { "Item": "Tier2Armor"   },
-
-        { "Item": "Tier2Shields" },
-
-        { "Item": "Tier2Tools"   }
-
-      ]
-
-    },
-
-
-
-    // Tier 3 Items
-
-    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-    {
-
-      "Name": "Tier3Weapons",
-
-      "Loot": [
-
-        { "Item": "Battleaxe",      "Weight": 1, "Rarity": [ 40, 50, 9, 1 ] },
-
-        { "Item": "SwordIron",      "Weight": 1, "Rarity": [ 40, 50, 9, 1 ] },
-
-        { "Item": "AxeIron",        "Weight": 1, "Rarity": [ 40, 50, 9, 1 ] },
-
-        { "Item": "SledgeIron",     "Weight": 1, "Rarity": [ 40, 50, 9, 1 ] },
-
-        { "Item": "MaceIron",       "Weight": 1, "Rarity": [ 40, 50, 9, 1 ] },
-
-        { "Item": "AtgeirIron",     "Weight": 1, "Rarity": [ 40, 50, 9, 1 ] },
-
-        { "Item": "SpearElderbark", "Weight": 1, "Rarity": [ 40, 50, 9, 1 ] }
-
-      ]
-
-    },
-
-    {
-
-      "Name": "Tier3Armor",
-
-      "Loot": [
-
-        { "Item": "ArmorIronLegs",  "Weight": 1, "Rarity": [ 40, 50, 9, 1 ] },
-
-        { "Item": "ArmorIronChest", "Weight": 1, "Rarity": [ 40, 50, 9, 1 ] },
-
-        { "Item": "HelmetIron",     "Weight": 1, "Rarity": [ 40, 50, 9, 1 ] }
-
-      ]
-
-    },
-
-    {
-
-      "Name": "Tier3Shields",
-
-      "Loot": [
-
-        { "Item": "ShieldBanded",    "Weight": 1, "Rarity": [ 40, 50, 9, 1 ] },
-
-        { "Item": "ShieldIronTower", "Weight": 1, "Rarity": [ 40, 50, 9, 1 ] }
-
-      ]
-
-    },
-
-    {
-
-      "Name": "Tier3Tools",
-
-      "Loot": [
-
-        { "Item": "PickaxeIron", "Weight": 1, "Rarity": [ 40, 50, 9, 1 ] }
-
-      ]
-
-    },
-
-    {
-
-      "Name": "Tier3Everything",
-
-      "Loot": [
-
-        { "Item": "Tier3Weapons" },
-
-        { "Item": "Tier3Armor"   },
-
-        { "Item": "Tier3Shields" },
-
-        { "Item": "Tier3Tools"   }
-
-      ]
-
-    },
-
-
-
-    // Tier 4 Items
-
-    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-    {
-
-      "Name": "Tier4Weapons",
-
-      "Loot": [
-
-        { "Item": "SwordSilver",   "Weight": 10, "Rarity": [ 10, 40, 45, 15 ] },
-
-        { "Item": "SpearWolfFang", "Weight": 10, "Rarity": [ 10, 40, 45, 15 ] },
-
-        { "Item": "MaceSilver",    "Weight": 1,  "Rarity": [ 10, 40, 45, 15 ] },
-
-        { "Item": "BowDraugrFang", "Weight": 1,  "Rarity": [ 10, 40, 45, 15 ] }
-
-      ]
-
-    },
-
-    {
-
-      "Name": "Tier4Armor",
-
-      "Loot": [
-
-        { "Item": "ArmorWolfLegs",  "Weight": 1, "Rarity": [ 10, 40, 45, 15 ] },
-
-        { "Item": "ArmorWolfChest", "Weight": 1, "Rarity": [ 10, 40, 45, 15 ] },
-
-        { "Item": "HelmetDrake",    "Weight": 1, "Rarity": [ 10, 40, 45, 15 ] },
-
-        { "Item": "CapeWolf",       "Weight": 1, "Rarity": [ 10, 40, 45, 15 ] }
-
-      ]
-
-    },
-
-    {
-
-      "Name": "Tier4Shields",
-
-      "Loot": [
-
-        { "Item": "ShieldSilver",       "Weight": 5, "Rarity": [ 10, 40, 45, 15 ] },
-
-        { "Item": "ShieldSerpentscale", "Weight": 1, "Rarity": [ 10, 40, 45, 15 ] }
-
-      ]
-
-    },
-
-    {
-
-      "Name": "Tier4Everything",
-
-      "Loot": [
-
-        { "Item": "Tier4Weapons" },
-
-        { "Item": "Tier4Armor"   },
-
-        { "Item": "Tier4Shields" }
-
-      ]
-
-    },
-
-
-
-    // Tier 5 Items
-
-    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-    {
-
-      "Name": "Tier5Weapons",
-
-      "Loot": [
-
-        { "Item": "AtgeirBlackmetal", "Weight": 3, "Rarity": [ 0, 30, 55, 15 ] },
-
-        { "Item": "AxeBlackMetal",    "Weight": 3, "Rarity": [ 0, 30, 55, 15 ] },
-
-        { "Item": "KnifeBlackMetal",  "Weight": 3, "Rarity": [ 0, 30, 55, 15 ] },
-
-        { "Item": "SwordBlackmetal",  "Weight": 3, "Rarity": [ 0, 30, 55, 15 ] },
-
-        { "Item": "MaceNeedle",       "Weight": 1, "Rarity": [ 0, 30, 55, 15 ] }
-
-      ]
-
-    },
-
-    {
-
-      "Name": "Tier5Armor",
-
-      "Loot": [
-
-        { "Item": "ArmorPaddedGreaves", "Weight": 1, "Rarity": [ 0, 30, 55, 15 ] },
-
-        { "Item": "ArmorPaddedCuirass", "Weight": 1, "Rarity": [ 0, 30, 55, 15 ] },
-
-        { "Item": "HelmetPadded",       "Weight": 1, "Rarity": [ 0, 30, 55, 15 ] },
-
-        { "Item": "CapeLinen",          "Weight": 1, "Rarity": [ 0, 30, 55, 15 ] },
-
-        { "Item": "CapeLox",            "Weight": 1, "Rarity": [ 0, 30, 55, 15 ] }
-
-      ]
-
-    },
-
-    {
-
-      "Name": "Tier5Shields",
-
-      "Loot": [
-
-        { "Item": "ShieldBlackmetal",      "Weight": 1, "Rarity": [ 0, 30, 55, 15 ] },
-
-        { "Item": "ShieldBlackmetalTower", "Weight": 1, "Rarity": [ 0, 30, 55, 15 ] }
-
-      ]
-
-    },
-
-    {
-
-      "Name": "Tier5Everything",
-
-      "Loot": [
-
-        { "Item": "Tier5Weapons" },
-
-        { "Item": "Tier5Armor"   },
-
-        { "Item": "Tier5Shields" }
-
-      ]
-
-    }
-
-  ],
-
-  "LootTables": [
-	  {
+{
+  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  // MAGIC EFFECT COUNTS
+  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  "MagicEffectsCount": {
+    "Magic":     [ [1, 80], [2, 18], [3, 2] ],
+    "Rare":      [ [2, 80], [3, 18], [4, 2] ],
+    "Epic":      [ [3, 80], [4, 18], [5, 2] ],
+    "Legendary": [ [4, 80], [5, 18], [6, 2] ]
+  },
+
+  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  // ITEM RESTRICTIONS
+  //   - It's not recommended to change any of these, but if you wanted to allow Dyrnwyn or tankards for some reason,
+  //     remove them from this list. You really shouldn't remove Unarmed or CAPE TEST from this list.
+  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  "RestrictedItems": [
+    "$item_tankard",
+    "$item_tankard_odin",
+    "Unarmed",
+    "CAPE TEST",
+    "Cheat sword",
+    "$item_sword_fire",
+    "$item_shield_iron_square"
+  ],
+
+  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  // ITEM SETS
+  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  "ItemSets": [
+
+    // Enchanting Mats
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    {
+      "Name": "EnchantingMats",
+      "Loot": [
+        { "Item": "Tier0Mats" },
+        { "Item": "Tier1Mats" },
+        { "Item": "Tier2Mats" },
+        { "Item": "Tier3Mats" }
+      ]
+    },
+    {
+      "Name": "Tier0Mats",
+      "Loot": [
+        { "Item": "DustMagic"    },
+        { "Item": "EssenceMagic" },
+        { "Item": "ReagentMagic" }
+      ]
+    },
+    {
+      "Name": "Tier1Mats",
+      "Loot": [
+        { "Item": "DustRare"    },
+        { "Item": "EssenceRare" },
+        { "Item": "ReagentRare" }
+      ]
+    },
+    {
+      "Name": "Tier2Mats",
+      "Loot": [
+        { "Item": "DustEpic"    },
+        { "Item": "EssenceEpic" },
+        { "Item": "ReagentEpic" }
+      ]
+    },
+    {
+      "Name": "Tier3Mats",
+      "Loot": [
+        { "Item": "DustLegendary"    },
+        { "Item": "EssenceLegendary" },
+        { "Item": "ReagentLegendary" }
+      ]
+    },
+    {
+      "Name": "EnchantingRunestones",
+      "Loot": [
+        { "Item": "RunestoneMagic"     },
+        { "Item": "RunestoneRare"      },
+        { "Item": "RunestoneEpic"      },
+        { "Item": "RunestoneLegendary" }
+      ]
+    },
+    {
+      "Name": "Tier0Runestone",
+      "Loot": [ { "Item": "RunestoneMagic" } ]
+    },
+    {
+      "Name": "Tier1Runestone",
+      "Loot": [ { "Item": "RunestoneRare" } ]
+    },
+    {
+      "Name": "Tier2Runestone",
+      "Loot": [ { "Item": "RunestoneEpic" } ]
+    },
+    {
+      "Name": "Tier3Runestone",
+      "Loot": [ { "Item": "RunestoneLegendary" } ]
+    },
+    {
+      "Name": "ModUtility",
+      "Loot": [
+        { "Item": "LeatherBelt"  },
+        { "Item": "SilverRing"   },
+        { "Item": "GoldRubyRing" }
+      ]
+    },
+
+    // Tier 0 Items
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    {
+      "Name": "Tier0Weapons",
+      "Loot": [
+        { "Item": "Club"     },
+        { "Item": "AxeStone" },
+        { "Item": "Torch"    }
+      ]
+    },
+    {
+      "Name": "Tier0Tools",
+      "Loot": [
+        { "Item": "Hammer" },
+        { "Item": "Hoe"    }
+      ]
+    },
+    {
+      "Name": "Tier0Armor",
+      "Loot": [
+        { "Item": "ArmorRagsLegs"  },
+        { "Item": "ArmorRagsChest" }
+      ]
+    },
+    {
+      "Name": "Tier0Shields",
+      "Loot": [
+        { "Item": "ShieldWood"      },
+        { "Item": "ShieldWoodTower" }
+      ]
+    },
+    {
+      "Name": "Tier0Everything",
+      "Loot": [
+        { "Item": "Tier0Weapons" },
+        { "Item": "Tier0Tools"   },
+        { "Item": "Tier0Armor"   },
+        { "Item": "Tier0Shields" }
+      ]
+    },
+
+    // Tier 1 Items
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    {
+      "Name": "Tier1Weapons",
+      "Loot": [
+        { "Item": "AxeFlint",   "Rarity": [ 99, 1, 0, 0 ] },
+        { "Item": "SpearFlint", "Rarity": [ 99, 1, 0, 0 ] },
+        { "Item": "KnifeFlint", "Rarity": [ 99, 1, 0, 0 ] },
+        { "Item": "Bow",        "Rarity": [ 99, 1, 0, 0 ] }
+      ]
+    },
+    {
+      "Name": "Tier1Armor",
+      "Loot": [
+        { "Item": "ArmorLeatherLegs",  "Rarity": [ 99, 1, 0, 0 ] },
+        { "Item": "ArmorLeatherChest", "Rarity": [ 99, 1, 0, 0 ] },
+        { "Item": "HelmetLeather",     "Rarity": [ 99, 1, 0, 0 ] },
+        { "Item": "CapeDeerHide",      "Rarity": [ 99, 1, 0, 0 ] }
+      ]
+    },
+    {
+      "Name": "Tier1Tools",
+      "Loot": [
+        { "Item": "PickaxeAntler", "Rarity": [ 99, 1, 0, 0 ] }
+      ]
+    },
+    {
+      "Name": "Tier1Everything",
+      "Loot": [
+        { "Item": "Tier1Weapons" },
+        { "Item": "Tier1Armor"   },
+        { "Item": "Tier1Tools"   }
+      ]
+    },
+
+    // Tier 2 Items
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    {
+      "Name": "TrollArmor",
+      "Loot": [
+        { "Item": "ArmorTrollLeatherLegs",  "Rarity": [ 95, 5, 0, 0 ] },
+        { "Item": "ArmorTrollLeatherChest", "Rarity": [ 95, 5, 0, 0 ] },
+        { "Item": "HelmetTrollLeather",     "Rarity": [ 95, 5, 0, 0 ] },
+        { "Item": "CapeTrollHide",          "Rarity": [ 95, 5, 0, 0 ] }
+      ]
+    },
+    {
+      "Name": "Tier2Weapons",
+      "Loot": [
+        { "Item": "KnifeCopper",       "Weight": 1, "Rarity": [ 95, 5, 0, 0 ] },
+        { "Item": "SledgeStagbreaker", "Weight": 1, "Rarity": [ 95, 5, 0, 0 ] },
+        { "Item": "SwordBronze",       "Weight": 1, "Rarity": [ 95, 5, 0, 0 ] },
+        { "Item": "AxeBronze",         "Weight": 1, "Rarity": [ 95, 5, 0, 0 ] },
+        { "Item": "MaceBronze",        "Weight": 1, "Rarity": [ 95, 5, 0, 0 ] },
+        { "Item": "AtgeirBronze",      "Weight": 1, "Rarity": [ 95, 5, 0, 0 ] },
+        { "Item": "SpearBronze",       "Weight": 1, "Rarity": [ 95, 5, 0, 0 ] },
+        { "Item": "BowFineWood",       "Weight": 1, "Rarity": [ 95, 5, 0, 0 ] },
+        { "Item": "KnifeChitin",       "Weight": 1, "Rarity": [ 95, 5, 0, 0 ] },
+        { "Item": "SpearChitin",       "Weight": 1, "Rarity": [ 95, 5, 0, 0 ] }
+      ]
+    },
+    {
+      "Name": "Tier2Armor",
+      "Loot": [
+        { "Item": "ArmorBronzeLegs",  "Rarity": [ 95, 5, 0, 0 ] },
+        { "Item": "ArmorBronzeChest", "Rarity": [ 95, 5, 0, 0 ] },
+        { "Item": "HelmetBronze",     "Rarity": [ 95, 5, 0, 0 ] }
+      ]
+    },
+    {
+      "Name": "Tier2Shields",
+      "Loot": [
+        { "Item": "ShieldBronzeBuckler", "Rarity": [ 95, 5, 0, 0 ] }
+      ]
+    },
+    {
+      "Name": "Tier2Tools",
+      "Loot": [
+        { "Item": "PickaxeBronze", "Rarity": [ 95, 5, 0, 0 ] },
+        { "Item": "Cultivator",    "Rarity": [ 95, 5, 0, 0 ] }
+      ]
+    },
+    {
+      "Name": "Tier2Everything",
+      "Loot": [
+        { "Item": "TrollArmor"   },
+        { "Item": "Tier2Weapons" },
+        { "Item": "Tier2Armor"   },
+        { "Item": "Tier2Shields" },
+        { "Item": "Tier2Tools"   }
+      ]
+    },
+
+    // Tier 3 Items
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    {
+      "Name": "Tier3Weapons",
+      "Loot": [
+        { "Item": "Battleaxe",      "Weight": 1, "Rarity": [ 40, 50, 9, 1 ] },
+        { "Item": "SwordIron",      "Weight": 1, "Rarity": [ 40, 50, 9, 1 ] },
+        { "Item": "AxeIron",        "Weight": 1, "Rarity": [ 40, 50, 9, 1 ] },
+        { "Item": "SledgeIron",     "Weight": 1, "Rarity": [ 40, 50, 9, 1 ] },
+        { "Item": "MaceIron",       "Weight": 1, "Rarity": [ 40, 50, 9, 1 ] },
+        { "Item": "AtgeirIron",     "Weight": 1, "Rarity": [ 40, 50, 9, 1 ] },
+        { "Item": "SpearElderbark", "Weight": 1, "Rarity": [ 40, 50, 9, 1 ] }
+      ]
+    },
+    {
+      "Name": "Tier3Armor",
+      "Loot": [
+        { "Item": "ArmorIronLegs",  "Weight": 1, "Rarity": [ 40, 50, 9, 1 ] },
+        { "Item": "ArmorIronChest", "Weight": 1, "Rarity": [ 40, 50, 9, 1 ] },
+        { "Item": "HelmetIron",     "Weight": 1, "Rarity": [ 40, 50, 9, 1 ] }
+      ]
+    },
+    {
+      "Name": "Tier3Shields",
+      "Loot": [
+        { "Item": "ShieldBanded",    "Weight": 1, "Rarity": [ 40, 50, 9, 1 ] },
+        { "Item": "ShieldIronTower", "Weight": 1, "Rarity": [ 40, 50, 9, 1 ] }
+      ]
+    },
+    {
+      "Name": "Tier3Tools",
+      "Loot": [
+        { "Item": "PickaxeIron", "Weight": 1, "Rarity": [ 40, 50, 9, 1 ] }
+      ]
+    },
+    {
+      "Name": "Tier3Everything",
+      "Loot": [
+        { "Item": "Tier3Weapons" },
+        { "Item": "Tier3Armor"   },
+        { "Item": "Tier3Shields" },
+        { "Item": "Tier3Tools"   }
+      ]
+    },
+
+    // Tier 4 Items
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    {
+      "Name": "Tier4Weapons",
+      "Loot": [
+        { "Item": "SwordSilver",   "Weight": 10, "Rarity": [ 10, 40, 45, 15 ] },
+        { "Item": "SpearWolfFang", "Weight": 10, "Rarity": [ 10, 40, 45, 15 ] },
+        { "Item": "MaceSilver",    "Weight": 1,  "Rarity": [ 10, 40, 45, 15 ] },
+        { "Item": "BowDraugrFang", "Weight": 1,  "Rarity": [ 10, 40, 45, 15 ] }
+      ]
+    },
+    {
+      "Name": "Tier4Armor",
+      "Loot": [
+        { "Item": "ArmorWolfLegs",  "Weight": 1, "Rarity": [ 10, 40, 45, 15 ] },
+        { "Item": "ArmorWolfChest", "Weight": 1, "Rarity": [ 10, 40, 45, 15 ] },
+        { "Item": "HelmetDrake",    "Weight": 1, "Rarity": [ 10, 40, 45, 15 ] },
+        { "Item": "CapeWolf",       "Weight": 1, "Rarity": [ 10, 40, 45, 15 ] }
+      ]
+    },
+    {
+      "Name": "Tier4Shields",
+      "Loot": [
+        { "Item": "ShieldSilver",       "Weight": 5, "Rarity": [ 10, 40, 45, 15 ] },
+        { "Item": "ShieldSerpentscale", "Weight": 1, "Rarity": [ 10, 40, 45, 15 ] }
+      ]
+    },
+    {
+      "Name": "Tier4Everything",
+      "Loot": [
+        { "Item": "Tier4Weapons" },
+        { "Item": "Tier4Armor"   },
+        { "Item": "Tier4Shields" }
+      ]
+    },
+
+    // Tier 5 Items
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    {
+      "Name": "Tier5Weapons",
+      "Loot": [
+        { "Item": "AtgeirBlackmetal", "Weight": 3, "Rarity": [ 0, 30, 55, 15 ] },
+        { "Item": "AxeBlackMetal",    "Weight": 3, "Rarity": [ 0, 30, 55, 15 ] },
+        { "Item": "KnifeBlackMetal",  "Weight": 3, "Rarity": [ 0, 30, 55, 15 ] },
+        { "Item": "SwordBlackmetal",  "Weight": 3, "Rarity": [ 0, 30, 55, 15 ] },
+        { "Item": "MaceNeedle",       "Weight": 1, "Rarity": [ 0, 30, 55, 15 ] }
+      ]
+    },
+    {
+      "Name": "Tier5Armor",
+      "Loot": [
+        { "Item": "ArmorPaddedGreaves", "Weight": 1, "Rarity": [ 0, 30, 55, 15 ] },
+        { "Item": "ArmorPaddedCuirass", "Weight": 1, "Rarity": [ 0, 30, 55, 15 ] },
+        { "Item": "HelmetPadded",       "Weight": 1, "Rarity": [ 0, 30, 55, 15 ] },
+        { "Item": "CapeLinen",          "Weight": 1, "Rarity": [ 0, 30, 55, 15 ] },
+        { "Item": "CapeLox",            "Weight": 1, "Rarity": [ 0, 30, 55, 15 ] }
+      ]
+    },
+    {
+      "Name": "Tier5Shields",
+      "Loot": [
+        { "Item": "ShieldBlackmetal",      "Weight": 1, "Rarity": [ 0, 30, 55, 15 ] },
+        { "Item": "ShieldBlackmetalTower", "Weight": 1, "Rarity": [ 0, 30, 55, 15 ] }
+      ]
+    },
+    {
+      "Name": "Tier5Everything",
+      "Loot": [
+        { "Item": "Tier5Weapons" },
+        { "Item": "Tier5Armor"   },
+        { "Item": "Tier5Shields" }
+      ]
+    }
+  ],
+  "LootTables": [{
 		"Object" : "Blob",
 		"LeveledLoot" : [
 			{
@@ -3586,7 +3224,7 @@
 		]
 	},
 	{
-		"Object" : "Draugr Elite",
+		"Object" : "Draugr_Elite",
 		"LeveledLoot" : [
 			{
 				"Level" : 1,
@@ -5036,7 +4674,457 @@
 		]
 	},
 	{
-		"Object" : "Fuling",
+		"Object" : "Ghost",
+		"LeveledLoot" : [
+			{
+				"Level" : 1,
+				"Drops" : [
+					[
+						0,
+						91
+					],
+					[
+						1,
+						5
+					],
+					[
+						2,
+						2
+					],
+					[
+						3,
+						1
+					],
+					[
+						4,
+						1
+					]
+				],
+				"Loot" : [
+					{
+						"Item" : "Tier0Mats",
+						"Weight" : 91
+					},
+					{
+						"Item" : "Tier1Mats",
+						"Weight" : 9
+					}
+				]
+			},
+			{
+				"Level" : 2,
+				"Drops" : [
+					[
+						0,
+						81
+					],
+					[
+						1,
+						11
+					],
+					[
+						2,
+						4
+					],
+					[
+						3,
+						2
+					],
+					[
+						4,
+						1
+					],
+					[
+						5,
+						1
+					]
+				],
+				"Loot" : [
+					{
+						"Item" : "Tier0Mats",
+						"Weight" : 97
+					},
+					{
+						"Item" : "Tier1Mats",
+						"Weight" : 3
+					}
+				]
+			},
+			{
+				"Level" : 3,
+				"Drops" : [
+					[
+						0,
+						68
+					],
+					[
+						1,
+						20
+					],
+					[
+						2,
+						7
+					],
+					[
+						3,
+						3
+					],
+					[
+						4,
+						1
+					],
+					[
+						5,
+						1
+					]
+				],
+				"Loot" : [
+					{
+						"Item" : "Tier0Mats",
+						"Weight" : 97
+					},
+					{
+						"Item" : "Tier1Mats",
+						"Weight" : 3
+					}
+				]
+			},
+			{
+				"Level" : 4,
+				"Drops" : [
+					[
+						0,
+						55
+					],
+					[
+						1,
+						29
+					],
+					[
+						2,
+						10
+					],
+					[
+						3,
+						4
+					],
+					[
+						4,
+						2
+					],
+					[
+						5,
+						1
+					]
+				],
+				"Loot" : [
+					{
+						"Item" : "Tier0Mats",
+						"Weight" : 96
+					},
+					{
+						"Item" : "Tier1Mats",
+						"Weight" : 4
+					}
+				]
+			},
+			{
+				"Level" : 5,
+				"Drops" : [
+					[
+						0,
+						34
+					],
+					[
+						1,
+						41
+					],
+					[
+						2,
+						16
+					],
+					[
+						3,
+						6
+					],
+					[
+						4,
+						2
+					],
+					[
+						5,
+						1
+					]
+				],
+				"Loot" : [
+					{
+						"Item" : "Tier0Mats",
+						"Weight" : 94
+					},
+					{
+						"Item" : "Tier1Mats",
+						"Weight" : 6
+					}
+				]
+			},
+			{
+				"Level" : 6,
+				"Drops" : [
+					[
+						0,
+						13
+					],
+					[
+						1,
+						47
+					],
+					[
+						2,
+						26
+					],
+					[
+						3,
+						10
+					],
+					[
+						4,
+						3
+					],
+					[
+						5,
+						1
+					]
+				],
+				"Loot" : [
+					{
+						"Item" : "Tier0Mats",
+						"Weight" : 89
+					},
+					{
+						"Item" : "Tier1Mats",
+						"Weight" : 11
+					}
+				]
+			},
+			{
+				"Level" : 7,
+				"Drops" : [
+					[
+						0,
+						3
+					],
+					[
+						1,
+						37
+					],
+					[
+						2,
+						36
+					],
+					[
+						3,
+						17
+					],
+					[
+						4,
+						5
+					],
+					[
+						5,
+						1
+					]
+				],
+				"Loot" : [
+					{
+						"Item" : "Tier0Mats",
+						"Weight" : 85
+					},
+					{
+						"Item" : "Tier1Mats",
+						"Weight" : 15
+					}
+				]
+			},
+			{
+				"Level" : 8,
+				"Drops" : [
+					[
+						0,
+						1
+					],
+					[
+						1,
+						30
+					],
+					[
+						2,
+						40
+					],
+					[
+						3,
+						20
+					],
+					[
+						4,
+						7
+					],
+					[
+						5,
+						2
+					]
+				],
+				"Loot" : [
+					{
+						"Item" : "Tier0Mats",
+						"Weight" : 78
+					},
+					{
+						"Item" : "Tier1Mats",
+						"Weight" : 21
+					},
+					{
+						"Item" : "Tier2Mats",
+						"Weight" : 1
+					}
+				]
+			},
+			{
+				"Level" : 9,
+				"Drops" : [
+					[
+						0,
+						1
+					],
+					[
+						1,
+						23
+					],
+					[
+						2,
+						41
+					],
+					[
+						3,
+						24
+					],
+					[
+						4,
+						9
+					],
+					[
+						5,
+						2
+					],
+					[
+						6,
+						1
+					]
+				],
+				"Loot" : [
+					{
+						"Item" : "Tier0Mats",
+						"Weight" : 71
+					},
+					{
+						"Item" : "Tier1Mats",
+						"Weight" : 27
+					},
+					{
+						"Item" : "Tier2Mats",
+						"Weight" : 2
+					}
+				]
+			},
+			{
+				"Level" : 10,
+				"Drops" : [
+					[
+						1,
+						10
+					],
+					[
+						2,
+						38
+					],
+					[
+						3,
+						33
+					],
+					[
+						4,
+						14
+					],
+					[
+						5,
+						4
+					],
+					[
+						6,
+						1
+					]
+				],
+				"Loot" : [
+					{
+						"Item" : "Tier0Mats",
+						"Weight" : 64
+					},
+					{
+						"Item" : "Tier1Mats",
+						"Weight" : 34
+					},
+					{
+						"Item" : "Tier2Mats",
+						"Weight" : 2
+					}
+				]
+			},
+			{
+				"Level" : 11,
+				"Drops" : [
+					[
+						1,
+						6
+					],
+					[
+						2,
+						34
+					],
+					[
+						3,
+						36
+					],
+					[
+						4,
+						17
+					],
+					[
+						5,
+						5
+					],
+					[
+						6,
+						1
+					]
+				],
+				"Loot" : [
+					{
+						"Item" : "Tier0Mats",
+						"Weight" : 59
+					},
+					{
+						"Item" : "Tier1Mats",
+						"Weight" : 38
+					},
+					{
+						"Item" : "Tier2Mats",
+						"Weight" : 3
+					}
+				]
+			}
+		]
+	},
+	{
+		"Object" : "Goblin",
 		"LeveledLoot" : [
 			{
 				"Level" : 1,
@@ -5542,7 +5630,7 @@
 		]
 	},
 	{
-		"Object" : "Fuling Berserker",
+		"Object" : "GoblinBrute",
 		"LeveledLoot" : [
 			{
 				"Level" : 1,
@@ -6056,7 +6144,517 @@
 		]
 	},
 	{
-		"Object" : "Fuling Shaman",
+		"Object" : "GoblinKing",
+		"LeveledLoot" : [
+			{
+				"Level" : 1,
+				"Drops" : [
+					[
+						2,
+						2
+					],
+					[
+						3,
+						19
+					],
+					[
+						4,
+						39
+					],
+					[
+						5,
+						28
+					],
+					[
+						6,
+						10
+					],
+					[
+						7,
+						2
+					]
+				],
+				"Loot" : [
+					{
+						"Item" : "Tier0Mats",
+						"Weight" : 17
+					},
+					{
+						"Item" : "Tier1Mats",
+						"Weight" : 58
+					},
+					{
+						"Item" : "Tier2Mats",
+						"Weight" : 24
+					},
+					{
+						"Item" : "Tier3Mats",
+						"Weight" : 1
+					}
+				]
+			},
+			{
+				"Level" : 2,
+				"Drops" : [
+					[
+						3,
+						7
+					],
+					[
+						4,
+						31
+					],
+					[
+						5,
+						37
+					],
+					[
+						6,
+						19
+					],
+					[
+						7,
+						5
+					],
+					[
+						8,
+						1
+					]
+				],
+				"Loot" : [
+					{
+						"Item" : "Tier0Mats",
+						"Weight" : 9
+					},
+					{
+						"Item" : "Tier1Mats",
+						"Weight" : 52
+					},
+					{
+						"Item" : "Tier2Mats",
+						"Weight" : 36
+					},
+					{
+						"Item" : "Tier3Mats",
+						"Weight" : 3
+					}
+				]
+			},
+			{
+				"Level" : 3,
+				"Drops" : [
+					[
+						3,
+						2
+					],
+					[
+						4,
+						17
+					],
+					[
+						5,
+						38
+					],
+					[
+						6,
+						30
+					],
+					[
+						7,
+						11
+					],
+					[
+						8,
+						2
+					]
+				],
+				"Loot" : [
+					{
+						"Item" : "Tier0Mats",
+						"Weight" : 5
+					},
+					{
+						"Item" : "Tier1Mats",
+						"Weight" : 42
+					},
+					{
+						"Item" : "Tier2Mats",
+						"Weight" : 47
+					},
+					{
+						"Item" : "Tier3Mats",
+						"Weight" : 6
+					}
+				]
+			},
+			{
+				"Level" : 4,
+				"Drops" : [
+					[
+						3,
+						1
+					],
+					[
+						4,
+						12
+					],
+					[
+						5,
+						35
+					],
+					[
+						6,
+						34
+					],
+					[
+						7,
+						15
+					],
+					[
+						8,
+						3
+					],
+					[
+						9,
+						1
+					]
+				],
+				"Loot" : [
+					{
+						"Item" : "Tier0Mats",
+						"Weight" : 2
+					},
+					{
+						"Item" : "Tier1Mats",
+						"Weight" : 34
+					},
+					{
+						"Item" : "Tier2Mats",
+						"Weight" : 53
+					},
+					{
+						"Item" : "Tier3Mats",
+						"Weight" : 11
+					}
+				]
+			},
+			{
+				"Level" : 5,
+				"Drops" : [
+					[
+						4,
+						5
+					],
+					[
+						5,
+						26
+					],
+					[
+						6,
+						38
+					],
+					[
+						7,
+						22
+					],
+					[
+						8,
+						7
+					],
+					[
+						9,
+						1
+					]
+				],
+				"Loot" : [
+					{
+						"Item" : "Tier0Mats",
+						"Weight" : 1
+					},
+					{
+						"Item" : "Tier1Mats",
+						"Weight" : 26
+					},
+					{
+						"Item" : "Tier2Mats",
+						"Weight" : 57
+					},
+					{
+						"Item" : "Tier3Mats",
+						"Weight" : 16
+					}
+				]
+			},
+			{
+				"Level" : 6,
+				"Drops" : [
+					[
+						4,
+						2
+					],
+					[
+						5,
+						16
+					],
+					[
+						6,
+						37
+					],
+					[
+						7,
+						31
+					],
+					[
+						8,
+						11
+					],
+					[
+						9,
+						2
+					]
+				],
+				"Loot" : [
+					{
+						"Item" : "Tier0Mats",
+						"Weight" : 1
+					},
+					{
+						"Item" : "Tier1Mats",
+						"Weight" : 19
+					},
+					{
+						"Item" : "Tier2Mats",
+						"Weight" : 58
+					},
+					{
+						"Item" : "Tier3Mats",
+						"Weight" : 22
+					}
+				]
+			},
+			{
+				"Level" : 7,
+				"Drops" : [
+					[
+						4,
+						1
+					],
+					[
+						5,
+						11
+					],
+					[
+						6,
+						34
+					],
+					[
+						7,
+						35
+					],
+					[
+						8,
+						16
+					],
+					[
+						9,
+						4
+					],
+					[
+						10,
+						1
+					]
+				],
+				"Loot" : [
+					{
+						"Item" : "Tier1Mats",
+						"Weight" : 15
+					},
+					{
+						"Item" : "Tier2Mats",
+						"Weight" : 57
+					},
+					{
+						"Item" : "Tier3Mats",
+						"Weight" : 28
+					}
+				]
+			},
+			{
+				"Level" : 8,
+				"Drops" : [
+					[
+						5,
+						6
+					],
+					[
+						6,
+						27
+					],
+					[
+						7,
+						38
+					],
+					[
+						8,
+						22
+					],
+					[
+						9,
+						6
+					],
+					[
+						10,
+						1
+					]
+				],
+				"Loot" : [
+					{
+						"Item" : "Tier1Mats",
+						"Weight" : 11
+					},
+					{
+						"Item" : "Tier2Mats",
+						"Weight" : 55
+					},
+					{
+						"Item" : "Tier3Mats",
+						"Weight" : 34
+					}
+				]
+			},
+			{
+				"Level" : 9,
+				"Drops" : [
+					[
+						5,
+						2
+					],
+					[
+						6,
+						15
+					],
+					[
+						7,
+						37
+					],
+					[
+						8,
+						32
+					],
+					[
+						9,
+						12
+					],
+					[
+						10,
+						2
+					]
+				],
+				"Loot" : [
+					{
+						"Item" : "Tier1Mats",
+						"Weight" : 9
+					},
+					{
+						"Item" : "Tier2Mats",
+						"Weight" : 51
+					},
+					{
+						"Item" : "Tier3Mats",
+						"Weight" : 40
+					}
+				]
+			},
+			{
+				"Level" : 10,
+				"Drops" : [
+					[
+						6,
+						7
+					],
+					[
+						7,
+						28
+					],
+					[
+						8,
+						38
+					],
+					[
+						9,
+						20
+					],
+					[
+						10,
+						5
+					],
+					[
+						11,
+						1
+					]
+				],
+				"Loot" : [
+					{
+						"Item" : "Tier1Mats",
+						"Weight" : 6
+					},
+					{
+						"Item" : "Tier2Mats",
+						"Weight" : 48
+					},
+					{
+						"Item" : "Tier3Mats",
+						"Weight" : 46
+					}
+				]
+			},
+			{
+				"Level" : 11,
+				"Drops" : [
+					[
+						6,
+						3
+					],
+					[
+						7,
+						18
+					],
+					[
+						8,
+						38
+					],
+					[
+						9,
+						30
+					],
+					[
+						10,
+						10
+					],
+					[
+						11,
+						2
+					]
+				],
+				"Loot" : [
+					{
+						"Item" : "Tier1Mats",
+						"Weight" : 5
+					},
+					{
+						"Item" : "Tier2Mats",
+						"Weight" : 44
+					},
+					{
+						"Item" : "Tier3Mats",
+						"Weight" : 51
+					}
+				]
+			}
+		]
+	},
+	{
+		"Object" : "GoblinShaman",
 		"LeveledLoot" : [
 			{
 				"Level" : 1,
@@ -6570,456 +7168,6 @@
 		]
 	},
 	{
-		"Object" : "Ghost",
-		"LeveledLoot" : [
-			{
-				"Level" : 1,
-				"Drops" : [
-					[
-						0,
-						91
-					],
-					[
-						1,
-						5
-					],
-					[
-						2,
-						2
-					],
-					[
-						3,
-						1
-					],
-					[
-						4,
-						1
-					]
-				],
-				"Loot" : [
-					{
-						"Item" : "Tier0Mats",
-						"Weight" : 91
-					},
-					{
-						"Item" : "Tier1Mats",
-						"Weight" : 9
-					}
-				]
-			},
-			{
-				"Level" : 2,
-				"Drops" : [
-					[
-						0,
-						81
-					],
-					[
-						1,
-						11
-					],
-					[
-						2,
-						4
-					],
-					[
-						3,
-						2
-					],
-					[
-						4,
-						1
-					],
-					[
-						5,
-						1
-					]
-				],
-				"Loot" : [
-					{
-						"Item" : "Tier0Mats",
-						"Weight" : 97
-					},
-					{
-						"Item" : "Tier1Mats",
-						"Weight" : 3
-					}
-				]
-			},
-			{
-				"Level" : 3,
-				"Drops" : [
-					[
-						0,
-						68
-					],
-					[
-						1,
-						20
-					],
-					[
-						2,
-						7
-					],
-					[
-						3,
-						3
-					],
-					[
-						4,
-						1
-					],
-					[
-						5,
-						1
-					]
-				],
-				"Loot" : [
-					{
-						"Item" : "Tier0Mats",
-						"Weight" : 97
-					},
-					{
-						"Item" : "Tier1Mats",
-						"Weight" : 3
-					}
-				]
-			},
-			{
-				"Level" : 4,
-				"Drops" : [
-					[
-						0,
-						55
-					],
-					[
-						1,
-						29
-					],
-					[
-						2,
-						10
-					],
-					[
-						3,
-						4
-					],
-					[
-						4,
-						2
-					],
-					[
-						5,
-						1
-					]
-				],
-				"Loot" : [
-					{
-						"Item" : "Tier0Mats",
-						"Weight" : 96
-					},
-					{
-						"Item" : "Tier1Mats",
-						"Weight" : 4
-					}
-				]
-			},
-			{
-				"Level" : 5,
-				"Drops" : [
-					[
-						0,
-						34
-					],
-					[
-						1,
-						41
-					],
-					[
-						2,
-						16
-					],
-					[
-						3,
-						6
-					],
-					[
-						4,
-						2
-					],
-					[
-						5,
-						1
-					]
-				],
-				"Loot" : [
-					{
-						"Item" : "Tier0Mats",
-						"Weight" : 94
-					},
-					{
-						"Item" : "Tier1Mats",
-						"Weight" : 6
-					}
-				]
-			},
-			{
-				"Level" : 6,
-				"Drops" : [
-					[
-						0,
-						13
-					],
-					[
-						1,
-						47
-					],
-					[
-						2,
-						26
-					],
-					[
-						3,
-						10
-					],
-					[
-						4,
-						3
-					],
-					[
-						5,
-						1
-					]
-				],
-				"Loot" : [
-					{
-						"Item" : "Tier0Mats",
-						"Weight" : 89
-					},
-					{
-						"Item" : "Tier1Mats",
-						"Weight" : 11
-					}
-				]
-			},
-			{
-				"Level" : 7,
-				"Drops" : [
-					[
-						0,
-						3
-					],
-					[
-						1,
-						37
-					],
-					[
-						2,
-						36
-					],
-					[
-						3,
-						17
-					],
-					[
-						4,
-						5
-					],
-					[
-						5,
-						1
-					]
-				],
-				"Loot" : [
-					{
-						"Item" : "Tier0Mats",
-						"Weight" : 85
-					},
-					{
-						"Item" : "Tier1Mats",
-						"Weight" : 15
-					}
-				]
-			},
-			{
-				"Level" : 8,
-				"Drops" : [
-					[
-						0,
-						1
-					],
-					[
-						1,
-						30
-					],
-					[
-						2,
-						40
-					],
-					[
-						3,
-						20
-					],
-					[
-						4,
-						7
-					],
-					[
-						5,
-						2
-					]
-				],
-				"Loot" : [
-					{
-						"Item" : "Tier0Mats",
-						"Weight" : 78
-					},
-					{
-						"Item" : "Tier1Mats",
-						"Weight" : 21
-					},
-					{
-						"Item" : "Tier2Mats",
-						"Weight" : 1
-					}
-				]
-			},
-			{
-				"Level" : 9,
-				"Drops" : [
-					[
-						0,
-						1
-					],
-					[
-						1,
-						23
-					],
-					[
-						2,
-						41
-					],
-					[
-						3,
-						24
-					],
-					[
-						4,
-						9
-					],
-					[
-						5,
-						2
-					],
-					[
-						6,
-						1
-					]
-				],
-				"Loot" : [
-					{
-						"Item" : "Tier0Mats",
-						"Weight" : 71
-					},
-					{
-						"Item" : "Tier1Mats",
-						"Weight" : 27
-					},
-					{
-						"Item" : "Tier2Mats",
-						"Weight" : 2
-					}
-				]
-			},
-			{
-				"Level" : 10,
-				"Drops" : [
-					[
-						1,
-						10
-					],
-					[
-						2,
-						38
-					],
-					[
-						3,
-						33
-					],
-					[
-						4,
-						14
-					],
-					[
-						5,
-						4
-					],
-					[
-						6,
-						1
-					]
-				],
-				"Loot" : [
-					{
-						"Item" : "Tier0Mats",
-						"Weight" : 64
-					},
-					{
-						"Item" : "Tier1Mats",
-						"Weight" : 34
-					},
-					{
-						"Item" : "Tier2Mats",
-						"Weight" : 2
-					}
-				]
-			},
-			{
-				"Level" : 11,
-				"Drops" : [
-					[
-						1,
-						6
-					],
-					[
-						2,
-						34
-					],
-					[
-						3,
-						36
-					],
-					[
-						4,
-						17
-					],
-					[
-						5,
-						5
-					],
-					[
-						6,
-						1
-					]
-				],
-				"Loot" : [
-					{
-						"Item" : "Tier0Mats",
-						"Weight" : 59
-					},
-					{
-						"Item" : "Tier1Mats",
-						"Weight" : 38
-					},
-					{
-						"Item" : "Tier2Mats",
-						"Weight" : 3
-					}
-				]
-			}
-		]
-	},
-	{
 		"Object" : "Greydwarf",
 		"LeveledLoot" : [
 			{
@@ -7442,7 +7590,7 @@
 		]
 	},
 	{
-		"Object" : "Greydwarf Brute",
+		"Object" : "Greydwarf_Elite",
 		"LeveledLoot" : [
 			{
 				"Level" : 1,
@@ -7904,7 +8052,7 @@
 		]
 	},
 	{
-		"Object" : "Greydwarf Shaman",
+		"Object" : "Greydwarf_Shaman",
 		"LeveledLoot" : [
 			{
 				"Level" : 1,
@@ -11170,464 +11318,6 @@
 		]
 	},
 	{
-		"Object" : "Rancid Remains",
-		"LeveledLoot" : [
-			{
-				"Level" : 1,
-				"Drops" : [
-					[
-						0,
-						90
-					],
-					[
-						1,
-						5
-					],
-					[
-						2,
-						2
-					],
-					[
-						3,
-						1
-					],
-					[
-						4,
-						1
-					]
-				],
-				"Loot" : [
-					{
-						"Item" : "Tier0Mats",
-						"Weight" : 94
-					},
-					{
-						"Item" : "Tier1Mats",
-						"Weight" : 6
-					}
-				]
-			},
-			{
-				"Level" : 2,
-				"Drops" : [
-					[
-						0,
-						77
-					],
-					[
-						1,
-						14
-					],
-					[
-						2,
-						5
-					],
-					[
-						3,
-						2
-					],
-					[
-						4,
-						1
-					],
-					[
-						5,
-						1
-					]
-				],
-				"Loot" : [
-					{
-						"Item" : "Tier0Mats",
-						"Weight" : 97
-					},
-					{
-						"Item" : "Tier1Mats",
-						"Weight" : 3
-					}
-				]
-			},
-			{
-				"Level" : 3,
-				"Drops" : [
-					[
-						0,
-						58
-					],
-					[
-						1,
-						27
-					],
-					[
-						2,
-						9
-					],
-					[
-						3,
-						4
-					],
-					[
-						4,
-						2
-					],
-					[
-						5,
-						1
-					]
-				],
-				"Loot" : [
-					{
-						"Item" : "Tier0Mats",
-						"Weight" : 96
-					},
-					{
-						"Item" : "Tier1Mats",
-						"Weight" : 4
-					}
-				]
-			},
-			{
-				"Level" : 4,
-				"Drops" : [
-					[
-						0,
-						34
-					],
-					[
-						1,
-						41
-					],
-					[
-						2,
-						16
-					],
-					[
-						3,
-						6
-					],
-					[
-						4,
-						2
-					],
-					[
-						5,
-						1
-					]
-				],
-				"Loot" : [
-					{
-						"Item" : "Tier0Mats",
-						"Weight" : 94
-					},
-					{
-						"Item" : "Tier1Mats",
-						"Weight" : 6
-					}
-				]
-			},
-			{
-				"Level" : 5,
-				"Drops" : [
-					[
-						0,
-						8
-					],
-					[
-						1,
-						45
-					],
-					[
-						2,
-						30
-					],
-					[
-						3,
-						12
-					],
-					[
-						4,
-						4
-					],
-					[
-						5,
-						1
-					]
-				],
-				"Loot" : [
-					{
-						"Item" : "Tier0Mats",
-						"Weight" : 88
-					},
-					{
-						"Item" : "Tier1Mats",
-						"Weight" : 12
-					}
-				]
-			},
-			{
-				"Level" : 6,
-				"Drops" : [
-					[
-						0,
-						2
-					],
-					[
-						1,
-						35
-					],
-					[
-						2,
-						38
-					],
-					[
-						3,
-						18
-					],
-					[
-						4,
-						6
-					],
-					[
-						5,
-						2
-					]
-				],
-				"Loot" : [
-					{
-						"Item" : "Tier0Mats",
-						"Weight" : 80
-					},
-					{
-						"Item" : "Tier1Mats",
-						"Weight" : 19
-					},
-					{
-						"Item" : "Tier2Mats",
-						"Weight" : 1
-					}
-				]
-			},
-			{
-				"Level" : 7,
-				"Drops" : [
-					[
-						1,
-						22
-					],
-					[
-						2,
-						41
-					],
-					[
-						3,
-						25
-					],
-					[
-						4,
-						9
-					],
-					[
-						5,
-						2
-					],
-					[
-						6,
-						1
-					]
-				],
-				"Loot" : [
-					{
-						"Item" : "Tier0Mats",
-						"Weight" : 71
-					},
-					{
-						"Item" : "Tier1Mats",
-						"Weight" : 27
-					},
-					{
-						"Item" : "Tier2Mats",
-						"Weight" : 2
-					}
-				]
-			},
-			{
-				"Level" : 8,
-				"Drops" : [
-					[
-						1,
-						10
-					],
-					[
-						2,
-						38
-					],
-					[
-						3,
-						33
-					],
-					[
-						4,
-						14
-					],
-					[
-						5,
-						4
-					],
-					[
-						6,
-						1
-					]
-				],
-				"Loot" : [
-					{
-						"Item" : "Tier0Mats",
-						"Weight" : 62
-					},
-					{
-						"Item" : "Tier1Mats",
-						"Weight" : 35
-					},
-					{
-						"Item" : "Tier2Mats",
-						"Weight" : 3
-					}
-				]
-			},
-			{
-				"Level" : 9,
-				"Drops" : [
-					[
-						1,
-						6
-					],
-					[
-						2,
-						33
-					],
-					[
-						3,
-						37
-					],
-					[
-						4,
-						18
-					],
-					[
-						5,
-						5
-					],
-					[
-						6,
-						1
-					]
-				],
-				"Loot" : [
-					{
-						"Item" : "Tier0Mats",
-						"Weight" : 52
-					},
-					{
-						"Item" : "Tier1Mats",
-						"Weight" : 43
-					},
-					{
-						"Item" : "Tier2Mats",
-						"Weight" : 5
-					}
-				]
-			},
-			{
-				"Level" : 10,
-				"Drops" : [
-					[
-						1,
-						2
-					],
-					[
-						2,
-						24
-					],
-					[
-						3,
-						40
-					],
-					[
-						4,
-						24
-					],
-					[
-						5,
-						8
-					],
-					[
-						6,
-						2
-					]
-				],
-				"Loot" : [
-					{
-						"Item" : "Tier0Mats",
-						"Weight" : 45
-					},
-					{
-						"Item" : "Tier1Mats",
-						"Weight" : 48
-					},
-					{
-						"Item" : "Tier2Mats",
-						"Weight" : 7
-					}
-				]
-			},
-			{
-				"Level" : 11,
-				"Drops" : [
-					[
-						1,
-						1
-					],
-					[
-						2,
-						15
-					],
-					[
-						3,
-						38
-					],
-					[
-						4,
-						30
-					],
-					[
-						5,
-						12
-					],
-					[
-						6,
-						3
-					],
-					[
-						7,
-						1
-					]
-				],
-				"Loot" : [
-					{
-						"Item" : "Tier0Mats",
-						"Weight" : 39
-					},
-					{
-						"Item" : "Tier1Mats",
-						"Weight" : 52
-					},
-					{
-						"Item" : "Tier2Mats",
-						"Weight" : 9
-					}
-				]
-			}
-		]
-	},
-	{
 		"Object" : "Serpent",
 		"LeveledLoot" : [
 			{
@@ -12578,6 +12268,464 @@
 					{
 						"Item" : "Tier2Mats",
 						"Weight" : 2
+					}
+				]
+			}
+		]
+	},
+	{
+		"Object" : "Skeleton_Poison",
+		"LeveledLoot" : [
+			{
+				"Level" : 1,
+				"Drops" : [
+					[
+						0,
+						90
+					],
+					[
+						1,
+						5
+					],
+					[
+						2,
+						2
+					],
+					[
+						3,
+						1
+					],
+					[
+						4,
+						1
+					]
+				],
+				"Loot" : [
+					{
+						"Item" : "Tier0Mats",
+						"Weight" : 94
+					},
+					{
+						"Item" : "Tier1Mats",
+						"Weight" : 6
+					}
+				]
+			},
+			{
+				"Level" : 2,
+				"Drops" : [
+					[
+						0,
+						77
+					],
+					[
+						1,
+						14
+					],
+					[
+						2,
+						5
+					],
+					[
+						3,
+						2
+					],
+					[
+						4,
+						1
+					],
+					[
+						5,
+						1
+					]
+				],
+				"Loot" : [
+					{
+						"Item" : "Tier0Mats",
+						"Weight" : 97
+					},
+					{
+						"Item" : "Tier1Mats",
+						"Weight" : 3
+					}
+				]
+			},
+			{
+				"Level" : 3,
+				"Drops" : [
+					[
+						0,
+						58
+					],
+					[
+						1,
+						27
+					],
+					[
+						2,
+						9
+					],
+					[
+						3,
+						4
+					],
+					[
+						4,
+						2
+					],
+					[
+						5,
+						1
+					]
+				],
+				"Loot" : [
+					{
+						"Item" : "Tier0Mats",
+						"Weight" : 96
+					},
+					{
+						"Item" : "Tier1Mats",
+						"Weight" : 4
+					}
+				]
+			},
+			{
+				"Level" : 4,
+				"Drops" : [
+					[
+						0,
+						34
+					],
+					[
+						1,
+						41
+					],
+					[
+						2,
+						16
+					],
+					[
+						3,
+						6
+					],
+					[
+						4,
+						2
+					],
+					[
+						5,
+						1
+					]
+				],
+				"Loot" : [
+					{
+						"Item" : "Tier0Mats",
+						"Weight" : 94
+					},
+					{
+						"Item" : "Tier1Mats",
+						"Weight" : 6
+					}
+				]
+			},
+			{
+				"Level" : 5,
+				"Drops" : [
+					[
+						0,
+						8
+					],
+					[
+						1,
+						45
+					],
+					[
+						2,
+						30
+					],
+					[
+						3,
+						12
+					],
+					[
+						4,
+						4
+					],
+					[
+						5,
+						1
+					]
+				],
+				"Loot" : [
+					{
+						"Item" : "Tier0Mats",
+						"Weight" : 88
+					},
+					{
+						"Item" : "Tier1Mats",
+						"Weight" : 12
+					}
+				]
+			},
+			{
+				"Level" : 6,
+				"Drops" : [
+					[
+						0,
+						2
+					],
+					[
+						1,
+						35
+					],
+					[
+						2,
+						38
+					],
+					[
+						3,
+						18
+					],
+					[
+						4,
+						6
+					],
+					[
+						5,
+						2
+					]
+				],
+				"Loot" : [
+					{
+						"Item" : "Tier0Mats",
+						"Weight" : 80
+					},
+					{
+						"Item" : "Tier1Mats",
+						"Weight" : 19
+					},
+					{
+						"Item" : "Tier2Mats",
+						"Weight" : 1
+					}
+				]
+			},
+			{
+				"Level" : 7,
+				"Drops" : [
+					[
+						1,
+						22
+					],
+					[
+						2,
+						41
+					],
+					[
+						3,
+						25
+					],
+					[
+						4,
+						9
+					],
+					[
+						5,
+						2
+					],
+					[
+						6,
+						1
+					]
+				],
+				"Loot" : [
+					{
+						"Item" : "Tier0Mats",
+						"Weight" : 71
+					},
+					{
+						"Item" : "Tier1Mats",
+						"Weight" : 27
+					},
+					{
+						"Item" : "Tier2Mats",
+						"Weight" : 2
+					}
+				]
+			},
+			{
+				"Level" : 8,
+				"Drops" : [
+					[
+						1,
+						10
+					],
+					[
+						2,
+						38
+					],
+					[
+						3,
+						33
+					],
+					[
+						4,
+						14
+					],
+					[
+						5,
+						4
+					],
+					[
+						6,
+						1
+					]
+				],
+				"Loot" : [
+					{
+						"Item" : "Tier0Mats",
+						"Weight" : 62
+					},
+					{
+						"Item" : "Tier1Mats",
+						"Weight" : 35
+					},
+					{
+						"Item" : "Tier2Mats",
+						"Weight" : 3
+					}
+				]
+			},
+			{
+				"Level" : 9,
+				"Drops" : [
+					[
+						1,
+						6
+					],
+					[
+						2,
+						33
+					],
+					[
+						3,
+						37
+					],
+					[
+						4,
+						18
+					],
+					[
+						5,
+						5
+					],
+					[
+						6,
+						1
+					]
+				],
+				"Loot" : [
+					{
+						"Item" : "Tier0Mats",
+						"Weight" : 52
+					},
+					{
+						"Item" : "Tier1Mats",
+						"Weight" : 43
+					},
+					{
+						"Item" : "Tier2Mats",
+						"Weight" : 5
+					}
+				]
+			},
+			{
+				"Level" : 10,
+				"Drops" : [
+					[
+						1,
+						2
+					],
+					[
+						2,
+						24
+					],
+					[
+						3,
+						40
+					],
+					[
+						4,
+						24
+					],
+					[
+						5,
+						8
+					],
+					[
+						6,
+						2
+					]
+				],
+				"Loot" : [
+					{
+						"Item" : "Tier0Mats",
+						"Weight" : 45
+					},
+					{
+						"Item" : "Tier1Mats",
+						"Weight" : 48
+					},
+					{
+						"Item" : "Tier2Mats",
+						"Weight" : 7
+					}
+				]
+			},
+			{
+				"Level" : 11,
+				"Drops" : [
+					[
+						1,
+						1
+					],
+					[
+						2,
+						15
+					],
+					[
+						3,
+						38
+					],
+					[
+						4,
+						30
+					],
+					[
+						5,
+						12
+					],
+					[
+						6,
+						3
+					],
+					[
+						7,
+						1
+					]
+				],
+				"Loot" : [
+					{
+						"Item" : "Tier0Mats",
+						"Weight" : 39
+					},
+					{
+						"Item" : "Tier1Mats",
+						"Weight" : 52
+					},
+					{
+						"Item" : "Tier2Mats",
+						"Weight" : 9
 					}
 				]
 			}
@@ -13549,524 +13697,6 @@
 					},
 					{
 						"Item" : "Tier2Mats",
-						"Weight" : 3
-					}
-				]
-			}
-		]
-	},
-	{
-		"Object" : "The Elder",
-		"LeveledLoot" : [
-			{
-				"Level" : 1,
-				"Drops" : [
-					[
-						0,
-						9
-					],
-					[
-						1,
-						45
-					],
-					[
-						2,
-						29
-					],
-					[
-						3,
-						11
-					],
-					[
-						4,
-						4
-					],
-					[
-						5,
-						1
-					]
-				],
-				"Loot" : [
-					{
-						"Item" : "Tier0Mats",
-						"Weight" : 85
-					},
-					{
-						"Item" : "Tier1Mats",
-						"Weight" : 14
-					},
-					{
-						"Item" : "Tier2Mats",
-						"Weight" : 1
-					}
-				]
-			},
-			{
-				"Level" : 2,
-				"Drops" : [
-					[
-						0,
-						1
-					],
-					[
-						1,
-						23
-					],
-					[
-						2,
-						41
-					],
-					[
-						3,
-						24
-					],
-					[
-						4,
-						9
-					],
-					[
-						5,
-						2
-					],
-					[
-						6,
-						1
-					]
-				],
-				"Loot" : [
-					{
-						"Item" : "Tier0Mats",
-						"Weight" : 75
-					},
-					{
-						"Item" : "Tier1Mats",
-						"Weight" : 24
-					},
-					{
-						"Item" : "Tier2Mats",
-						"Weight" : 1
-					}
-				]
-			},
-			{
-				"Level" : 3,
-				"Drops" : [
-					[
-						1,
-						11
-					],
-					[
-						2,
-						39
-					],
-					[
-						3,
-						32
-					],
-					[
-						4,
-						13
-					],
-					[
-						5,
-						4
-					],
-					[
-						6,
-						1
-					]
-				],
-				"Loot" : [
-					{
-						"Item" : "Tier0Mats",
-						"Weight" : 62
-					},
-					{
-						"Item" : "Tier1Mats",
-						"Weight" : 35
-					},
-					{
-						"Item" : "Tier2Mats",
-						"Weight" : 3
-					}
-				]
-			},
-			{
-				"Level" : 4,
-				"Drops" : [
-					[
-						1,
-						3
-					],
-					[
-						2,
-						27
-					],
-					[
-						3,
-						39
-					],
-					[
-						4,
-						22
-					],
-					[
-						5,
-						7
-					],
-					[
-						6,
-						2
-					]
-				],
-				"Loot" : [
-					{
-						"Item" : "Tier0Mats",
-						"Weight" : 51
-					},
-					{
-						"Item" : "Tier1Mats",
-						"Weight" : 44
-					},
-					{
-						"Item" : "Tier2Mats",
-						"Weight" : 5
-					}
-				]
-			},
-			{
-				"Level" : 5,
-				"Drops" : [
-					[
-						1,
-						1
-					],
-					[
-						2,
-						15
-					],
-					[
-						3,
-						38
-					],
-					[
-						4,
-						31
-					],
-					[
-						5,
-						12
-					],
-					[
-						6,
-						3
-					],
-					[
-						7,
-						1
-					]
-				],
-				"Loot" : [
-					{
-						"Item" : "Tier0Mats",
-						"Weight" : 41
-					},
-					{
-						"Item" : "Tier1Mats",
-						"Weight" : 51
-					},
-					{
-						"Item" : "Tier2Mats",
-						"Weight" : 8
-					}
-				]
-			},
-			{
-				"Level" : 6,
-				"Drops" : [
-					[
-						2,
-						7
-					],
-					[
-						3,
-						32
-					],
-					[
-						4,
-						37
-					],
-					[
-						5,
-						18
-					],
-					[
-						6,
-						5
-					],
-					[
-						7,
-						1
-					]
-				],
-				"Loot" : [
-					{
-						"Item" : "Tier0Mats",
-						"Weight" : 33
-					},
-					{
-						"Item" : "Tier1Mats",
-						"Weight" : 55
-					},
-					{
-						"Item" : "Tier2Mats",
-						"Weight" : 12
-					}
-				]
-			},
-			{
-				"Level" : 7,
-				"Drops" : [
-					[
-						2,
-						11
-					],
-					[
-						3,
-						36
-					],
-					[
-						4,
-						33
-					],
-					[
-						5,
-						14
-					],
-					[
-						6,
-						4
-					],
-					[
-						7,
-						1
-					]
-				],
-				"Loot" : [
-					{
-						"Item" : "Tier0Mats",
-						"Weight" : 25
-					},
-					{
-						"Item" : "Tier1Mats",
-						"Weight" : 57
-					},
-					{
-						"Item" : "Tier2Mats",
-						"Weight" : 17
-					},
-					{
-						"Item" : "Tier3Mats",
-						"Weight" : 1
-					}
-				]
-			},
-			{
-				"Level" : 8,
-				"Drops" : [
-					[
-						2,
-						4
-					],
-					[
-						3,
-						26
-					],
-					[
-						4,
-						39
-					],
-					[
-						5,
-						23
-					],
-					[
-						6,
-						7
-					],
-					[
-						7,
-						1
-					]
-				],
-				"Loot" : [
-					{
-						"Item" : "Tier0Mats",
-						"Weight" : 20
-					},
-					{
-						"Item" : "Tier1Mats",
-						"Weight" : 58
-					},
-					{
-						"Item" : "Tier2Mats",
-						"Weight" : 21
-					},
-					{
-						"Item" : "Tier3Mats",
-						"Weight" : 1
-					}
-				]
-			},
-			{
-				"Level" : 9,
-				"Drops" : [
-					[
-						2,
-						1
-					],
-					[
-						3,
-						13
-					],
-					[
-						4,
-						37
-					],
-					[
-						5,
-						33
-					],
-					[
-						6,
-						13
-					],
-					[
-						7,
-						3
-					],
-					[
-						8,
-						1
-					]
-				],
-				"Loot" : [
-					{
-						"Item" : "Tier0Mats",
-						"Weight" : 16
-					},
-					{
-						"Item" : "Tier1Mats",
-						"Weight" : 57
-					},
-					{
-						"Item" : "Tier2Mats",
-						"Weight" : 26
-					},
-					{
-						"Item" : "Tier3Mats",
-						"Weight" : 1
-					}
-				]
-			},
-			{
-				"Level" : 10,
-				"Drops" : [
-					[
-						2,
-						1
-					],
-					[
-						3,
-						13
-					],
-					[
-						4,
-						36
-					],
-					[
-						5,
-						33
-					],
-					[
-						6,
-						13
-					],
-					[
-						7,
-						3
-					],
-					[
-						8,
-						1
-					]
-				],
-				"Loot" : [
-					{
-						"Item" : "Tier0Mats",
-						"Weight" : 12
-					},
-					{
-						"Item" : "Tier1Mats",
-						"Weight" : 55
-					},
-					{
-						"Item" : "Tier2Mats",
-						"Weight" : 31
-					},
-					{
-						"Item" : "Tier3Mats",
-						"Weight" : 2
-					}
-				]
-			},
-			{
-				"Level" : 11,
-				"Drops" : [
-					[
-						2,
-						1
-					],
-					[
-						3,
-						10
-					],
-					[
-						4,
-						34
-					],
-					[
-						5,
-						35
-					],
-					[
-						6,
-						15
-					],
-					[
-						7,
-						4
-					],
-					[
-						8,
-						1
-					]
-				],
-				"Loot" : [
-					{
-						"Item" : "Tier0Mats",
-						"Weight" : 10
-					},
-					{
-						"Item" : "Tier1Mats",
-						"Weight" : 52
-					},
-					{
-						"Item" : "Tier2Mats",
-						"Weight" : 35
-					},
-					{
-						"Item" : "Tier3Mats",
 						"Weight" : 3
 					}
 				]
@@ -15556,51 +15186,47 @@
 		]
 	},
 	{
-		"Object" : "Yagluth",
+		"Object" : "gd_king",
 		"LeveledLoot" : [
 			{
 				"Level" : 1,
 				"Drops" : [
 					[
+						0,
+						9
+					],
+					[
+						1,
+						45
+					],
+					[
 						2,
-						2
+						29
 					],
 					[
 						3,
-						19
+						11
 					],
 					[
 						4,
-						39
+						4
 					],
 					[
 						5,
-						28
-					],
-					[
-						6,
-						10
-					],
-					[
-						7,
-						2
+						1
 					]
 				],
 				"Loot" : [
 					{
 						"Item" : "Tier0Mats",
-						"Weight" : 17
+						"Weight" : 85
 					},
 					{
 						"Item" : "Tier1Mats",
-						"Weight" : 58
+						"Weight" : 14
 					},
 					{
 						"Item" : "Tier2Mats",
-						"Weight" : 24
-					},
-					{
-						"Item" : "Tier3Mats",
 						"Weight" : 1
 					}
 				]
@@ -15609,46 +15235,46 @@
 				"Level" : 2,
 				"Drops" : [
 					[
+						0,
+						1
+					],
+					[
+						1,
+						23
+					],
+					[
+						2,
+						41
+					],
+					[
 						3,
-						7
+						24
 					],
 					[
 						4,
-						31
+						9
 					],
 					[
 						5,
-						37
+						2
 					],
 					[
 						6,
-						19
-					],
-					[
-						7,
-						5
-					],
-					[
-						8,
 						1
 					]
 				],
 				"Loot" : [
 					{
 						"Item" : "Tier0Mats",
-						"Weight" : 9
+						"Weight" : 75
 					},
 					{
 						"Item" : "Tier1Mats",
-						"Weight" : 52
+						"Weight" : 24
 					},
 					{
 						"Item" : "Tier2Mats",
-						"Weight" : 36
-					},
-					{
-						"Item" : "Tier3Mats",
-						"Weight" : 3
+						"Weight" : 1
 					}
 				]
 			},
@@ -15656,46 +15282,42 @@
 				"Level" : 3,
 				"Drops" : [
 					[
-						3,
-						2
-					],
-					[
-						4,
-						17
-					],
-					[
-						5,
-						38
-					],
-					[
-						6,
-						30
-					],
-					[
-						7,
+						1,
 						11
 					],
 					[
-						8,
-						2
+						2,
+						39
+					],
+					[
+						3,
+						32
+					],
+					[
+						4,
+						13
+					],
+					[
+						5,
+						4
+					],
+					[
+						6,
+						1
 					]
 				],
 				"Loot" : [
 					{
 						"Item" : "Tier0Mats",
-						"Weight" : 5
+						"Weight" : 62
 					},
 					{
 						"Item" : "Tier1Mats",
-						"Weight" : 42
+						"Weight" : 35
 					},
 					{
 						"Item" : "Tier2Mats",
-						"Weight" : 47
-					},
-					{
-						"Item" : "Tier3Mats",
-						"Weight" : 6
+						"Weight" : 3
 					}
 				]
 			},
@@ -15703,50 +15325,42 @@
 				"Level" : 4,
 				"Drops" : [
 					[
-						3,
-						1
-					],
-					[
-						4,
-						12
-					],
-					[
-						5,
-						35
-					],
-					[
-						6,
-						34
-					],
-					[
-						7,
-						15
-					],
-					[
-						8,
+						1,
 						3
 					],
 					[
-						9,
-						1
+						2,
+						27
+					],
+					[
+						3,
+						39
+					],
+					[
+						4,
+						22
+					],
+					[
+						5,
+						7
+					],
+					[
+						6,
+						2
 					]
 				],
 				"Loot" : [
 					{
 						"Item" : "Tier0Mats",
-						"Weight" : 2
+						"Weight" : 51
 					},
 					{
 						"Item" : "Tier1Mats",
-						"Weight" : 34
+						"Weight" : 44
 					},
 					{
 						"Item" : "Tier2Mats",
-						"Weight" : 53
-					},
-					{
-						"Item" : "Tier3Mats",
-						"Weight" : 11
+						"Weight" : 5
 					}
 				]
 			},
@@ -15754,46 +15368,46 @@
 				"Level" : 5,
 				"Drops" : [
 					[
-						4,
-						5
+						1,
+						1
 					],
 					[
-						5,
-						26
+						2,
+						15
 					],
 					[
-						6,
+						3,
 						38
 					],
 					[
+						4,
+						31
+					],
+					[
+						5,
+						12
+					],
+					[
+						6,
+						3
+					],
+					[
 						7,
-						22
-					],
-					[
-						8,
-						7
-					],
-					[
-						9,
 						1
 					]
 				],
 				"Loot" : [
 					{
 						"Item" : "Tier0Mats",
-						"Weight" : 1
+						"Weight" : 41
 					},
 					{
 						"Item" : "Tier1Mats",
-						"Weight" : 26
+						"Weight" : 51
 					},
 					{
 						"Item" : "Tier2Mats",
-						"Weight" : 57
-					},
-					{
-						"Item" : "Tier3Mats",
-						"Weight" : 16
+						"Weight" : 8
 					}
 				]
 			},
@@ -15801,46 +15415,42 @@
 				"Level" : 6,
 				"Drops" : [
 					[
+						2,
+						7
+					],
+					[
+						3,
+						32
+					],
+					[
 						4,
-						2
-					],
-					[
-						5,
-						16
-					],
-					[
-						6,
 						37
 					],
 					[
+						5,
+						18
+					],
+					[
+						6,
+						5
+					],
+					[
 						7,
-						31
-					],
-					[
-						8,
-						11
-					],
-					[
-						9,
-						2
+						1
 					]
 				],
 				"Loot" : [
 					{
 						"Item" : "Tier0Mats",
-						"Weight" : 1
+						"Weight" : 33
 					},
 					{
 						"Item" : "Tier1Mats",
-						"Weight" : 19
+						"Weight" : 55
 					},
 					{
 						"Item" : "Tier2Mats",
-						"Weight" : 58
-					},
-					{
-						"Item" : "Tier3Mats",
-						"Weight" : 22
+						"Weight" : 12
 					}
 				]
 			},
@@ -15848,46 +15458,46 @@
 				"Level" : 7,
 				"Drops" : [
 					[
-						4,
-						1
-					],
-					[
-						5,
+						2,
 						11
 					],
 					[
+						3,
+						36
+					],
+					[
+						4,
+						33
+					],
+					[
+						5,
+						14
+					],
+					[
 						6,
-						34
-					],
-					[
-						7,
-						35
-					],
-					[
-						8,
-						16
-					],
-					[
-						9,
 						4
 					],
 					[
-						10,
+						7,
 						1
 					]
 				],
 				"Loot" : [
 					{
-						"Item" : "Tier1Mats",
-						"Weight" : 15
+						"Item" : "Tier0Mats",
+						"Weight" : 25
 					},
 					{
-						"Item" : "Tier2Mats",
+						"Item" : "Tier1Mats",
 						"Weight" : 57
 					},
 					{
+						"Item" : "Tier2Mats",
+						"Weight" : 17
+					},
+					{
 						"Item" : "Tier3Mats",
-						"Weight" : 28
+						"Weight" : 1
 					}
 				]
 			},
@@ -15895,42 +15505,46 @@
 				"Level" : 8,
 				"Drops" : [
 					[
+						2,
+						4
+					],
+					[
+						3,
+						26
+					],
+					[
+						4,
+						39
+					],
+					[
 						5,
-						6
+						23
 					],
 					[
 						6,
-						27
+						7
 					],
 					[
 						7,
-						38
-					],
-					[
-						8,
-						22
-					],
-					[
-						9,
-						6
-					],
-					[
-						10,
 						1
 					]
 				],
 				"Loot" : [
 					{
+						"Item" : "Tier0Mats",
+						"Weight" : 20
+					},
+					{
 						"Item" : "Tier1Mats",
-						"Weight" : 11
+						"Weight" : 58
 					},
 					{
 						"Item" : "Tier2Mats",
-						"Weight" : 55
+						"Weight" : 21
 					},
 					{
 						"Item" : "Tier3Mats",
-						"Weight" : 34
+						"Weight" : 1
 					}
 				]
 			},
@@ -15938,42 +15552,50 @@
 				"Level" : 9,
 				"Drops" : [
 					[
-						5,
-						2
+						2,
+						1
 					],
 					[
-						6,
-						15
+						3,
+						13
 					],
 					[
-						7,
+						4,
 						37
 					],
 					[
+						5,
+						33
+					],
+					[
+						6,
+						13
+					],
+					[
+						7,
+						3
+					],
+					[
 						8,
-						32
-					],
-					[
-						9,
-						12
-					],
-					[
-						10,
-						2
+						1
 					]
 				],
 				"Loot" : [
 					{
+						"Item" : "Tier0Mats",
+						"Weight" : 16
+					},
+					{
 						"Item" : "Tier1Mats",
-						"Weight" : 9
+						"Weight" : 57
 					},
 					{
 						"Item" : "Tier2Mats",
-						"Weight" : 51
+						"Weight" : 26
 					},
 					{
 						"Item" : "Tier3Mats",
-						"Weight" : 40
+						"Weight" : 1
 					}
 				]
 			},
@@ -15981,42 +15603,50 @@
 				"Level" : 10,
 				"Drops" : [
 					[
+						2,
+						1
+					],
+					[
+						3,
+						13
+					],
+					[
+						4,
+						36
+					],
+					[
+						5,
+						33
+					],
+					[
 						6,
-						7
+						13
 					],
 					[
 						7,
-						28
+						3
 					],
 					[
 						8,
-						38
-					],
-					[
-						9,
-						20
-					],
-					[
-						10,
-						5
-					],
-					[
-						11,
 						1
 					]
 				],
 				"Loot" : [
 					{
+						"Item" : "Tier0Mats",
+						"Weight" : 12
+					},
+					{
 						"Item" : "Tier1Mats",
-						"Weight" : 6
+						"Weight" : 55
 					},
 					{
 						"Item" : "Tier2Mats",
-						"Weight" : 48
+						"Weight" : 31
 					},
 					{
 						"Item" : "Tier3Mats",
-						"Weight" : 46
+						"Weight" : 2
 					}
 				]
 			},
@@ -16024,380 +15654,220 @@
 				"Level" : 11,
 				"Drops" : [
 					[
-						6,
-						3
+						2,
+						1
 					],
 					[
-						7,
-						18
-					],
-					[
-						8,
-						38
-					],
-					[
-						9,
-						30
-					],
-					[
-						10,
+						3,
 						10
 					],
 					[
-						11,
-						2
+						4,
+						34
+					],
+					[
+						5,
+						35
+					],
+					[
+						6,
+						15
+					],
+					[
+						7,
+						4
+					],
+					[
+						8,
+						1
 					]
 				],
 				"Loot" : [
 					{
+						"Item" : "Tier0Mats",
+						"Weight" : 10
+					},
+					{
 						"Item" : "Tier1Mats",
-						"Weight" : 5
+						"Weight" : 52
 					},
 					{
 						"Item" : "Tier2Mats",
-						"Weight" : 44
+						"Weight" : 35
 					},
 					{
 						"Item" : "Tier3Mats",
-						"Weight" : 51
+						"Weight" : 3
 					}
 				]
 			}
 		]
-	},
-
-
-
-    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-    // TREASURE CHESTS
-
-    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-    //TreasureChest_meadows
-
-    ////////////////////////////////////////////////////////////////////////////////////
-
-    {
-
-      "Object": "TreasureChest_meadows",
-
-      "Drops": [ [0, 78], [1, 20], [2, 2] ],
-
-      "Loot": [
-
-        { "Item": "Tier0Everything", "Weight": 4, "Rarity": [ 97, 2, 1, 0] },
-
-        { "Item": "Tier1Everything", "Weight": 1, "Rarity": [ 97, 2, 1, 0] }
-
-      ]
-
-    },
-
-    //TreasureChest_blackforest
-
-    ////////////////////////////////////////////////////////////////////////////////////
-
-    {
-
-      "Object": "TreasureChest_blackforest",
-
-      "Drops": [ [0, 70], [1, 30] ],
-
-      "Loot": [
-
-        { "Item": "Tier0Shields",    "Weight": 1, "Rarity": [ 95, 4, 1, 0] },
-
-        { "Item": "Tier1Everything", "Weight": 2, "Rarity": [ 95, 4, 1, 0] }
-
-      ]
-
-    },
-
-    //TreasureChest_forestcrypt
-
-    ////////////////////////////////////////////////////////////////////////////////////
-
-    {
-
-      "Object": "TreasureChest_forestcrypt",
-
-      "Drops": [ [0, 68], [1, 20], [2, 10], [3, 2] ],
-
-      "Loot": [
-
-        { "Item": "Tier1Everything", "Weight": 2, "Rarity": [ 95, 4, 1, 0] },
-
-        { "Item": "Tier2Everything", "Weight": 1, "Rarity": [ 95, 4, 1, 0] }
-
-      ]
-
-    },
-
-    //TreasureChest_fCrypt (I think this is just a copy of forestcrypt)
-
-    ////////////////////////////////////////////////////////////////////////////////////
-
-    {
-
-      "Object": "TreasureChest_fCrypt",
-
-      "Drops": [ [0, 68], [1, 20], [2, 10], [3, 2] ],
-
-      "Loot": [{ "Item": "TreasureChest_forestcrypt.1" }]
-
-    },
-
-    //TreasureChest_trollcave
-
-    ////////////////////////////////////////////////////////////////////////////////////
-
-    {
-
-      "Object": "TreasureChest_trollcave",
-
-      "Drops": [ [0, 48], [1, 40], [2, 20], [3, 2] ],
-
-      "Loot": [
-
-        { "Item": "Tier1Everything", "Weight": 1, "Rarity": [ 90, 9, 1, 0] },
-
-        { "Item": "Tier2Everything", "Weight": 1, "Rarity": [ 90, 9, 1, 0] }
-
-      ]
-
-    },
-
-    // shipwreck_karve_chest
-
-    ////////////////////////////////////////////////////////////////////////////////////
-
-    {
-
-      "Object": "shipwreck_karve_chest",
-
-      "Drops": [ [0, 48], [1, 40], [2, 20], [3, 2] ],
-
-      "Loot": [
-
-        { "Item": "Tier0Everything", "Weight": 1, "Rarity": [ 90, 9, 1, 0] },
-
-        { "Item": "Tier1Everything", "Weight": 1, "Rarity": [ 90, 9, 1, 0] }
-
-      ]
-
-    },
-
-    // TreasureChest_meadows_buried
-
-    ////////////////////////////////////////////////////////////////////////////////////
-
-    {
-
-      "Object": "TreasureChest_meadows_buried",
-
-      "Drops": [ [0, 48], [1, 40], [2, 20], [3, 2] ],
-
-      "Loot": [
-
-        { "Item": "Tier0Everything", "Weight": 3, "Rarity": [ 70, 25, 5, 0] },
-
-        { "Item": "Tier1Everything", "Weight": 2, "Rarity": [ 70, 25, 5, 0] }
-
-      ]
-
-    },
-
-    // TreasureChest_sunkencrypt
-
-    ////////////////////////////////////////////////////////////////////////////////////
-
-    {
-
-      "Object": "TreasureChest_sunkencrypt",
-
-      "Drops": [ [0, 58], [1, 30], [2, 20], [3, 2] ],
-
-      "Loot": [
-
-        { "Item": "Tier2Everything", "Weight": 3, "Rarity": [ 80, 17, 3, 0] },
-
-        { "Item": "Tier3Everything", "Weight": 1, "Rarity": [ 80, 17, 3, 0] }
-
-      ]
-
-    },
-
-    // TreasureChest_swamp
-
-    ////////////////////////////////////////////////////////////////////////////////////
-
-    {
-
-      "Object": "TreasureChest_swamp",
-
-      "Drops": [ [0, 58], [1, 30], [2, 20], [3, 2] ],
-
-      "Loot": [
-
-        { "Item": "Tier2Everything", "Weight": 5 },
-
-        { "Item": "Tier3Everything", "Weight": 1 }
-
-      ]
-
-    },
-
-    // TreasureChest_mountains
-
-    ////////////////////////////////////////////////////////////////////////////////////
-
-    {
-
-      "Object": "TreasureChest_mountains",
-
-      "Drops": [ [0, 58], [1, 30], [2, 20], [3, 2] ],
-
-      "Loot": [
-
-        { "Item": "Tier3Everything", "Weight": 4 },
-
-        { "Item": "Tier4Everything", "Weight": 1 }
-
-      ]
-
-    },
-
-    // TreasureChest_plains_stone
-
-    ////////////////////////////////////////////////////////////////////////////////////
-
-    {
-
-      "Object": "TreasureChest_plains_stone",
-
-      "Drops": [ [0, 58], [1, 30], [2, 20], [3, 2] ],
-
-      "Loot": [
-
-        { "Item": "TreasureChest_heath.1", "Weight": 1 }
-
-      ]
-
-    },
-
-    // TreasureChest_heath
-
-    ////////////////////////////////////////////////////////////////////////////////////
-
-    {
-
-      "Object": "TreasureChest_heath",
-
-      "Drops": [ [0, 58], [1, 30], [2, 20], [3, 2] ],
-
-      "Loot": [
-
-        { "Item": "Tier4Everything", "Weight": 3 },
-
-        { "Item": "Tier5Everything", "Weight": 1 }
-
-      ]
-
-    },
-
-
-
-    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-    // TREASURE MAP CHESTS
-
-    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-    {
-
-      "Object": "TreasureMapChest_Meadows",
-
-      "Drops": [ [3, 80], [4, 15], [5, 5] ],
-
-      "Loot": [
-
-        { "Item": "Tier0Everything", "Weight": 1, "Rarity": [ 68, 30, 2, 0] },
-
-        { "Item": "Tier1Everything", "Weight": 1, "Rarity": [ 68, 30, 2, 0] }
-
-      ]
-
-    },
-
-    {
-
-      "Object": "TreasureMapChest_BlackForest",
-
-      "Drops": [ [3, 80], [4, 15], [5, 5] ],
-
-      "Loot": [
-
-        { "Item": "Tier1Everything", "Weight": 1, "Rarity": [ 40, 50, 9, 1] },
-
-        { "Item": "Tier2Everything", "Weight": 1, "Rarity": [ 40, 50, 9, 1] }
-
-      ]
-
-    },
-
-    {
-
-      "Object": "TreasureMapChest_Swamp",
-
-      "Drops": [ [3, 80], [4, 15], [5, 5] ],
-
-      "Loot": [
-
-        { "Item": "Tier2Everything", "Weight": 1, "Rarity": [ 10, 45, 50, 5] },
-
-        { "Item": "Tier3Everything", "Weight": 1, "Rarity": [ 10, 45, 50, 5] }
-
-      ]
-
-    },
-
-    {
-
-      "Object": "TreasureMapChest_Mountain",
-
-      "Drops": [ [3, 80], [4, 15], [5, 5] ],
-
-      "Loot": [
-
-        { "Item": "Tier3Everything", "Weight": 1, "Rarity": [0, 30, 60, 10] },
-
-        { "Item": "Tier4Everything", "Weight": 1, "Rarity": [0, 30, 60, 10] }
-
-      ]
-
-    },
-
-    {
-
-      "Object": "TreasureMapChest_Plains",
-
-      "Drops": [ [3, 80], [4, 15], [5, 5] ],
-
-      "Loot": [
-
-        { "Item": "Tier4Everything", "Weight": 1, "Rarity": [0, 10, 75, 15] },
-
-        { "Item": "Tier5Everything", "Weight": 1, "Rarity": [0, 10, 75, 15] }
-
-      ]
-
-    }
-
-  ]
-
-}
-
+	},
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // TREASURE CHESTS
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //TreasureChest_meadows
+    ////////////////////////////////////////////////////////////////////////////////////
+    {
+      "Object": "TreasureChest_meadows",
+      "Drops": [ [0, 78], [1, 20], [2, 2] ],
+      "Loot": [
+        { "Item": "Tier0Everything", "Weight": 4, "Rarity": [ 97, 2, 1, 0] },
+        { "Item": "Tier1Everything", "Weight": 1, "Rarity": [ 97, 2, 1, 0] }
+      ]
+    },
+    //TreasureChest_blackforest
+    ////////////////////////////////////////////////////////////////////////////////////
+    {
+      "Object": "TreasureChest_blackforest",
+      "Drops": [ [0, 70], [1, 30] ],
+      "Loot": [
+        { "Item": "Tier0Shields",    "Weight": 1, "Rarity": [ 95, 4, 1, 0] },
+        { "Item": "Tier1Everything", "Weight": 2, "Rarity": [ 95, 4, 1, 0] }
+      ]
+    },
+    //TreasureChest_forestcrypt
+    ////////////////////////////////////////////////////////////////////////////////////
+    {
+      "Object": "TreasureChest_forestcrypt",
+      "Drops": [ [0, 68], [1, 20], [2, 10], [3, 2] ],
+      "Loot": [
+        { "Item": "Tier1Everything", "Weight": 2, "Rarity": [ 95, 4, 1, 0] },
+        { "Item": "Tier2Everything", "Weight": 1, "Rarity": [ 95, 4, 1, 0] }
+      ]
+    },
+    //TreasureChest_fCrypt (I think this is just a copy of forestcrypt)
+    ////////////////////////////////////////////////////////////////////////////////////
+    {
+      "Object": "TreasureChest_fCrypt",
+      "Drops": [ [0, 68], [1, 20], [2, 10], [3, 2] ],
+      "Loot": [{ "Item": "TreasureChest_forestcrypt.1" }]
+    },
+    //TreasureChest_trollcave
+    ////////////////////////////////////////////////////////////////////////////////////
+    {
+      "Object": "TreasureChest_trollcave",
+      "Drops": [ [0, 48], [1, 40], [2, 20], [3, 2] ],
+      "Loot": [
+        { "Item": "Tier1Everything", "Weight": 1, "Rarity": [ 90, 9, 1, 0] },
+        { "Item": "Tier2Everything", "Weight": 1, "Rarity": [ 90, 9, 1, 0] }
+      ]
+    },
+    // shipwreck_karve_chest
+    ////////////////////////////////////////////////////////////////////////////////////
+    {
+      "Object": "shipwreck_karve_chest",
+      "Drops": [ [0, 48], [1, 40], [2, 20], [3, 2] ],
+      "Loot": [
+        { "Item": "Tier0Everything", "Weight": 1, "Rarity": [ 90, 9, 1, 0] },
+        { "Item": "Tier1Everything", "Weight": 1, "Rarity": [ 90, 9, 1, 0] }
+      ]
+    },
+    // TreasureChest_meadows_buried
+    ////////////////////////////////////////////////////////////////////////////////////
+    {
+      "Object": "TreasureChest_meadows_buried",
+      "Drops": [ [0, 48], [1, 40], [2, 20], [3, 2] ],
+      "Loot": [
+        { "Item": "Tier0Everything", "Weight": 3, "Rarity": [ 70, 25, 5, 0] },
+        { "Item": "Tier1Everything", "Weight": 2, "Rarity": [ 70, 25, 5, 0] }
+      ]
+    },
+    // TreasureChest_sunkencrypt
+    ////////////////////////////////////////////////////////////////////////////////////
+    {
+      "Object": "TreasureChest_sunkencrypt",
+      "Drops": [ [0, 58], [1, 30], [2, 20], [3, 2] ],
+      "Loot": [
+        { "Item": "Tier2Everything", "Weight": 3, "Rarity": [ 80, 17, 3, 0] },
+        { "Item": "Tier3Everything", "Weight": 1, "Rarity": [ 80, 17, 3, 0] }
+      ]
+    },
+    // TreasureChest_swamp
+    ////////////////////////////////////////////////////////////////////////////////////
+    {
+      "Object": "TreasureChest_swamp",
+      "Drops": [ [0, 58], [1, 30], [2, 20], [3, 2] ],
+      "Loot": [
+        { "Item": "Tier2Everything", "Weight": 5 },
+        { "Item": "Tier3Everything", "Weight": 1 }
+      ]
+    },
+    // TreasureChest_mountains
+    ////////////////////////////////////////////////////////////////////////////////////
+    {
+      "Object": "TreasureChest_mountains",
+      "Drops": [ [0, 58], [1, 30], [2, 20], [3, 2] ],
+      "Loot": [
+        { "Item": "Tier3Everything", "Weight": 4 },
+        { "Item": "Tier4Everything", "Weight": 1 }
+      ]
+    },
+    // TreasureChest_plains_stone
+    ////////////////////////////////////////////////////////////////////////////////////
+    {
+      "Object": "TreasureChest_plains_stone",
+      "Drops": [ [0, 58], [1, 30], [2, 20], [3, 2] ],
+      "Loot": [
+        { "Item": "TreasureChest_heath.1", "Weight": 1 }
+      ]
+    },
+    // TreasureChest_heath
+    ////////////////////////////////////////////////////////////////////////////////////
+    {
+      "Object": "TreasureChest_heath",
+      "Drops": [ [0, 58], [1, 30], [2, 20], [3, 2] ],
+      "Loot": [
+        { "Item": "Tier4Everything", "Weight": 3 },
+        { "Item": "Tier5Everything", "Weight": 1 }
+      ]
+    },
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // TREASURE MAP CHESTS
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    {
+      "Object": "TreasureMapChest_Meadows",
+      "Drops": [ [3, 80], [4, 15], [5, 5] ],
+      "Loot": [
+        { "Item": "Tier0Everything", "Weight": 1, "Rarity": [ 68, 30, 2, 0] },
+        { "Item": "Tier1Everything", "Weight": 1, "Rarity": [ 68, 30, 2, 0] }
+      ]
+    },
+    {
+      "Object": "TreasureMapChest_BlackForest",
+      "Drops": [ [3, 80], [4, 15], [5, 5] ],
+      "Loot": [
+        { "Item": "Tier1Everything", "Weight": 1, "Rarity": [ 40, 50, 9, 1] },
+        { "Item": "Tier2Everything", "Weight": 1, "Rarity": [ 40, 50, 9, 1] }
+      ]
+    },
+    {
+      "Object": "TreasureMapChest_Swamp",
+      "Drops": [ [3, 80], [4, 15], [5, 5] ],
+      "Loot": [
+        { "Item": "Tier2Everything", "Weight": 1, "Rarity": [ 10, 45, 50, 5] },
+        { "Item": "Tier3Everything", "Weight": 1, "Rarity": [ 10, 45, 50, 5] }
+      ]
+    },
+    {
+      "Object": "TreasureMapChest_Mountain",
+      "Drops": [ [3, 80], [4, 15], [5, 5] ],
+      "Loot": [
+        { "Item": "Tier3Everything", "Weight": 1, "Rarity": [0, 30, 60, 10] },
+        { "Item": "Tier4Everything", "Weight": 1, "Rarity": [0, 30, 60, 10] }
+      ]
+    },
+    {
+      "Object": "TreasureMapChest_Plains",
+      "Drops": [ [3, 80], [4, 15], [5, 5] ],
+      "Loot": [
+        { "Item": "Tier4Everything", "Weight": 1, "Rarity": [0, 10, 75, 15] },
+        { "Item": "Tier5Everything", "Weight": 1, "Rarity": [0, 10, 75, 15] }
+      ]
+    }
+  ]
+}
 
