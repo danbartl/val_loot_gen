@@ -1,37 +1,45 @@
 
 
 
-level <- fread("rawdata/cllc_levelup.csv")
+level <- fread("data/processed/cllc_levelup.csv")
 
-creatures_edited <- fread("rawdata/creatures_modified.csv")
+creatures_edited <- fread("data/raw/creatures_modified.csv")
 
 #Currently no passive loottables
 
-creatures2b <- creatures_edited[!is.na(hp) & !is.na(damage) & type_behavior!="Passive"]
+creatures2b <- creatures_edited[!is.na(health) & !is.na(damage) & type_behavior!="Passive"]
 
-creatures2 <- merge(creatures2b,level,by=c("type_behavior"),all.x=T,allow.cartesian = T)
+creatures2 <- merge(creatures2b,level,by=c("name"),all.x=T,allow.cartesian = T,suffixes=c("","_boost"))
 
+
+
+#creatures2[,.N,by=.(usual_biome)]
 setkeyv(creatures2,"name")
 
 
-creatures2[,hp:=hp_boost*hp]
+creatures2[,hp:=health_boost*health]
 creatures2[,damage:=damage_boost*damage]
+creatures2[,movement_speed:=movement_speed_boost^1.5*movement_speed]
+creatures2[,attack_speed:=attack_speed_boost^1.5*attack_speed]
+
 creatures2[,scaled_hp:=hp/accuracy]
 
 
-creatures2[,early_damage:=0.5*damage^2/(early_hero_armor + 0.5 * damage)]
-creatures2[,mid_damage:=0.5*damage^2/(mid_hero_armor + 0.5 * damage)]
-creatures2[,end_damage:=0.5*damage^2/(end_hero_armor + 0.5 * damage)]
+creatures2[,early_damage:=10+0.5*damage^2/(early_hero_armor + 0.5 * damage)]
+creatures2[,mid_damage:=10+0.5*damage^2/(mid_hero_armor + 0.5 * damage)]
+creatures2[,end_damage:=10+0.5*damage^2/(end_hero_armor + 0.5 * damage)]
 
 creatures2[,early_damage:=pmin(early_damage,early_hero_hp)]
 creatures2[,mid_damage:=pmin(mid_damage,mid_hero_hp)]
 creatures2[,end_damage:=pmin(end_damage,end_hero_hp)]
 
-creatures2[,early_damage_byhero:=pmax(early_hero_damage,scaled_hp)]
-creatures2[,mid_damage_byhero:=pmax(mid_hero_damage,scaled_hp)]
-creatures2[,end_damage_byhero:=pmax(end_hero_damage,scaled_hp)]
+# creatures2[,early_damage_byhero:=pmax(early_hero_damage,scaled_hp)]
+# creatures2[,mid_damage_byhero:=pmax(mid_hero_damage,scaled_hp)]
+# creatures2[,end_damage_byhero:=pmax(end_hero_damage,scaled_hp)]
+# 
+# creatures2[,effective_hp:=hero_weight[1]*early_damage_byhero+hero_weight[2]*mid_damage_byhero+hero_weight[3]*end_damage_byhero]
 
-creatures2[,effective_hp:=hero_weight[1]*early_damage_byhero+hero_weight[2]*mid_damage_byhero+hero_weight[3]*end_damage_byhero]
+creatures2[,effective_hp:=pmax(scaled_hp,hero_min_damage)]
 
 creatures2[,hits_to_kill:=hero_weight[1]*early_hero_hp/early_damage
            +hero_weight[2]*mid_hero_hp/mid_damage
@@ -40,7 +48,7 @@ creatures2[,hits_to_kill:=hero_weight[1]*early_hero_hp/early_damage
 creatures2[,hits_to_kill_scaled:=hits_to_kill/(movement_speed*attack_speed)]
 
 creatures2[,danger:=1/hits_to_kill_scaled*effective_hp]
-creatures2[,danger:=ceiling(danger/creatures2[,min(danger)])]
+creatures2[,danger:=danger/creatures2[,min(danger)]]
 
 setorderv(creatures2,"danger")
 
@@ -56,9 +64,10 @@ creatures2[,rare:=legendaries*conversion_enchantmats^(tiers-1)]
 setorderv(creatures2,"danger")
 
 
-creatures_to_dust <- creatures2[,.(name,stars,hp,damage,magic_dust=fifelse(rare<1,0.1+ceiling(rare^0.5*100)/100,0.1+rare))]
+creatures_to_dust <- creatures2[,.(name,stars,hp,effective_hp,damage,rare,magic_dust=0.1+rare)]
 
-creatures_to_dust %>%  tail(100)
-creatures_to_dust %>%  head(100)
+# creatures_to_dust %>%  tail(100)
+# creatures_to_dust %>%  head(100)
+# creatures2 %>%  View
 
-fwrite(creatures_to_dust,"rawdata/creatures_to_dust.csv")
+fwrite(creatures_to_dust,"data/processed/creatures_to_dust.csv")

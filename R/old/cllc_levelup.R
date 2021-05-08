@@ -18,3 +18,5 @@ level[,c("hp_boost","damage_boost"):=.(1+hp_boost*stars,1+damage_boost*stars)]
 
 
 fwrite(level,"rawdata/cllc_levelup.csv")
+
+creatures_to_dust

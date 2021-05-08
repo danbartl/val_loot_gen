@@ -1,5 +1,5 @@
 
-creatures_to_dust <- fread("rawdata/creatures_to_dust.csv")
+creatures_to_dust <- fread("data/raw/creatures_to_dust.csv")
 
 drop_base <- creatures_to_dust[,.(creature_id=paste0(name,"__",stars),magic_dust)] %>%  unique
 drop_base[,expected_count:=seq(expected_drops[1],expected_drops[2],length.out=.N)]
@@ -96,9 +96,9 @@ valheim_export <- valheim_loot9  %>%  RJSONIO::toJSON(pretty=TRUE)
 #roux
 require("readr")
 
-mystring <- read_file("rawdata/loottables_077_edited.json")
+mystring <- read_file("data/raw/loottables_077_edited.json")
 valheim_export <- substring(valheim_export,4,nchar(valheim_export)-2)
 # 
 mystring <- str_replace_all(mystring,"INSERTLOOT",valheim_export)
 # 
-write(mystring, "output/loottables.json")
+write(mystring, "data/output/loottables.json")
