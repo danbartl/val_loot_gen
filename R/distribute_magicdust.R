@@ -30,8 +30,9 @@ setkeyv(creatures2,"name")
 
 creatures2[,hp:=health_boost*health]
 creatures2[,damage:=damage_boost*damage]
-creatures2[,movement_speed:=movement_speed_boost^1.5*movement_speed]
-creatures2[,attack_speed:=attack_speed_boost^1.5*attack_speed]
+creatures2[,movement_speed:=exp(movement_speed_boost-1)*movement_speed]
+creatures2[,attack_speed:=exp(attack_speed_boost-1)*attack_speed]
+
 
 creatures2[,scaled_hp:=hp/accuracy]
 

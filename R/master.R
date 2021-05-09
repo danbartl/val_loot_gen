@@ -16,3 +16,4 @@ inspect_dt[name %like% "Greydwarf$"]
 inspect_dt[name %like% "Bonemass$"]
 inspect_dt[name %like% "Deathsquito$"]
 inspect_dt[name %like% "Wolf$"]
+
