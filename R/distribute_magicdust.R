@@ -3,7 +3,18 @@
 
 level <- fread("data/processed/cllc_levelup.csv")
 
-creatures_edited <- fread("data/raw/creatures_modified.csv")
+creatures_edited <- fread("data/configuration/base_creatures.csv")
+
+creatures_edited[usual_biome %like% "Meadows",progression:=1]
+creatures_edited[usual_biome %like% "Black Forest",progression:=2]
+creatures_edited[usual_biome %like% "Swamp",progression:=3]
+creatures_edited[usual_biome %like% "Mountain",progression:=4]
+creatures_edited[usual_biome %like% "Ocean",progression:=3]
+creatures_edited[usual_biome %like% "Plains",progression:=5]
+
+creatures_edited[,hero_min_damage:=25+(progression-1)*30]
+
+
 
 #Currently no passive loottables
 
@@ -45,9 +56,9 @@ creatures2[,hits_to_kill:=hero_weight[1]*early_hero_hp/early_damage
            +hero_weight[2]*mid_hero_hp/mid_damage
            +hero_weight[3]*end_hero_hp/end_damage]
 
-creatures2[,hits_to_kill_scaled:=hits_to_kill/(movement_speed*attack_speed)]
+#creatures2[,hits_to_kill_scaled:=hits_to_kill/(movement_speed*attack_speed)]
 
-creatures2[,danger:=1/hits_to_kill_scaled*effective_hp]
+creatures2[,danger:=1/hits_to_kill*effective_hp*movement_speed*attack_speed]
 creatures2[,danger:=danger/creatures2[,min(danger)]]
 
 setorderv(creatures2,"danger")
@@ -64,7 +75,7 @@ creatures2[,rare:=legendaries*conversion_enchantmats^(tiers-1)]
 setorderv(creatures2,"danger")
 
 
-creatures_to_dust <- creatures2[,.(name,stars,hp,effective_hp,damage,rare,magic_dust=0.1+rare)]
+creatures_to_dust <- creatures2[,.(name,stars,hp,effective_hp,damage,rare=round(rare,5),magic_dust=round(0.1+rare,5))]
 
 # creatures_to_dust %>%  tail(100)
 # creatures_to_dust %>%  head(100)

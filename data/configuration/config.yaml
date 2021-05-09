@@ -1,0 +1,25 @@
+enchantcosts:
+  conversion_rate: 5.0
+  tiers: 4.0
+drop_count:
+  min_expected_drops: 0.2
+  max_expected_drops: 10.0
+drop_value:
+  legendary_for_strongest: 8.0
+hero:
+  scenario_weight:
+    early: 0.25
+    mid: 0.25
+    end: 0.5
+  early_stats:
+    armor: 20.0
+    damage: 15.0
+    health: 90.0
+  mid_stats:
+    armor: 80.0
+    damage: 60.0
+    health: 140.0
+  end_stats:
+    armor: 200.0
+    damage: 140.0
+    health: 460.0

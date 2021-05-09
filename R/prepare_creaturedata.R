@@ -1,7 +1,7 @@
 
 
 
-creatures <- readxl::read_excel("data/raw/creatures.xlsx") %>%  data.table
+creatures <- readxl::read_excel("data/preparation/creatures.xlsx") %>%  data.table
 creatures %>% setnames(.,tolower(names(.))) %>%
   setnames(.,str_replace_all(names(.),"[^[:alnum:]]+","_")) %>%
   setnames(.,str_replace_all(names(.),"(^_)|(_$)","")) %>%
@@ -43,11 +43,12 @@ creatures_edited["Moder",damage:=180]
 creatures_edited["Yagluth",damage:=200]
 
 creatures_edited[,movement_speed:=1]
-creatures_edited[name=="Deathsquito",movement_speed:=2.5]
+creatures_edited[name=="Deathsquito",movement_speed:=2]
 creatures_edited[name %in% c("Lox","Troll","Fuling Berserker"),movement_speed:=0.8]
 creatures_edited[name=="Wolf",movement_speed:=1.5]
 creatures_edited[,attack_speed:=1]
 creatures_edited[name=="Wolf",attack_speed:=1.5]
+creatures_edited[name=="Deathsquito",attack_speed:=1.5]
 
 #Accuracy is a simple scaling for HP to reduce rewards from HP sponges
 #Especially with path finding issues
@@ -59,7 +60,7 @@ creatures_edited[name %in% c("Blob"),accuracy:=1.4]
 creatures_edited[name %in% c("Stone Golem"),accuracy:=1.5]
 creatures_edited[name %in% c("Moder","Yagluth"),accuracy:=2.5]
 creatures_edited[name=="Deathsquito",accuracy:=0.1]
-creatures_edited[name=="Wolf",accuracy:=0.5]
+creatures_edited[name=="Wolf",accuracy:=0.8]
 
 creatures_edited[name=="Yagluth",name:="GoblinKing"]
 creatures_edited[name=="The Elder",name:="gd_king"]
@@ -72,18 +73,12 @@ creatures_edited[name%like%"Fuling Berserker",name:="GoblinBrute"]
 creatures_edited[name%like%"Draugr Elite",name:="Draugr_Elite"]
 creatures_edited[name%like%"Fuling$",name:="Goblin"]
 
-creatures_edited[usual_biome %like% "Meadows",progression:=1]
-creatures_edited[usual_biome %like% "Black Forest",progression:=2]
-creatures_edited[usual_biome %like% "Swamp",progression:=3]
-creatures_edited[usual_biome %like% "Mountain",progression:=4]
-creatures_edited[usual_biome %like% "Ocean",progression:=3]
-creatures_edited[usual_biome %like% "Plains",progression:=5]
-
-creatures_edited[,hero_min_damage:=25+(progression-1)*30]
 
 setnames(creatures_edited,"hp","health")
 
-fwrite(creatures_edited,"data/processed/creatures_modified.csv")
+creatures_edited <- creatures_edited[,!c("dmg1","dmg_edit"),with=F]
+
+fwrite(creatures_edited,"data/configuration/base_creatures.csv")
 
 #creatures_editeda <- fread("C:/temp/valheim/creatures_edited.csv")
 

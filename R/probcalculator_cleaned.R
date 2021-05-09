@@ -1,5 +1,5 @@
 
-creatures_to_dust <- fread("data/raw/creatures_to_dust.csv")
+creatures_to_dust <- fread("data/processed/creatures_to_dust.csv")
 
 drop_base <- creatures_to_dust[,.(creature_id=paste0(name,"__",stars),magic_dust)] %>%  unique
 drop_base[,expected_count:=seq(expected_drops[1],expected_drops[2],length.out=.N)]

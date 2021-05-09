@@ -1,4 +1,4 @@
-cllc <- yaml::read_yaml("data/raw/CreatureConfig.yml") 
+cllc <- yaml::read_yaml("data/configuration/CreatureConfig.yml") 
 
 cllc <- data.table(cllc_category=cllc,names=names(cllc))
 

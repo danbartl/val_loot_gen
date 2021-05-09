@@ -9,6 +9,8 @@ level_base <- data.table(stars=0:10)
 
 level <- CJ.dt(creatures3,level_base)
 
+#First stats from biomes
+#Which are then overwritten by creature stats
 setnames(level,"usual_biome","value")
 level[attack,attack_speed:=i.attack_speed,on=c("value","stars")]
 level[movement,movement_speed:=i.movement_speed,on=c("value","stars")]

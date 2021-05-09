@@ -1,0 +1,38 @@
+name,type_behavior,aoe,heal,dot,usual_biome,multiattack,speed,health,damage,movement_speed,attack_speed,accuracy
+Blob,Aggressive,TRUE,FALSE,TRUE,Swamp,FALSE,1,50,70,1,1,1.4
+Boar,Aggressive,FALSE,FALSE,FALSE,Meadows,FALSE,1,10,10,1,1,1
+Bonemass,Boss,TRUE,FALSE,FALSE,Swamp,FALSE,1,5000,150,1,1,1.8
+Crow,Passive,FALSE,FALSE,FALSE,Meadows,FALSE,1,1,0,1,1,1
+Deathsquito,Aggressive,FALSE,FALSE,FALSE,Plains,FALSE,3,10,90,2,1.5,0.1
+Deer,Passive,FALSE,FALSE,FALSE,Meadows,FALSE,1,10,0,1,1,1
+Drake,Aggressive,FALSE,FALSE,FALSE,Mountain,FALSE,1,100,90,1,1,1
+Draugr,Aggressive,FALSE,FALSE,FALSE,Swamp,TRUE,1,100,48,1,1,1
+Draugr_Elite,Aggressive,FALSE,FALSE,FALSE,Swamp,FALSE,1,200,58,1,1,1
+Eikthyr,Boss,FALSE,FALSE,FALSE,Meadows,FALSE,1,500,30,1,1,1.8
+Fenring,Aggressive,FALSE,FALSE,FALSE,Mountain,TRUE,1,300,95,1,1,1
+Fish,Passive,FALSE,FALSE,FALSE,Ocean,FALSE,1,1,0,1,1,1
+Goblin,Aggressive,FALSE,FALSE,FALSE,Plains,TRUE,1,200,110,1,1,1
+GoblinBrute,Aggressive,TRUE,FALSE,FALSE,Plains,TRUE,1,800,130,0.8,1,1.5
+GoblinShaman,Aggressive,FALSE,TRUE,TRUE,Plains,TRUE,1,150,100,1,1,1
+Ghost,Aggressive,FALSE,FALSE,FALSE,Black Forest,FALSE,1,60,25,1,1,1
+Greydwarf,Aggressive,FALSE,FALSE,FALSE,Black Forest,TRUE,1,40,14,1,1,1
+Greydwarf_Elite,Aggressive,FALSE,FALSE,FALSE,Black Forest,FALSE,1,150,30,1,1,1
+Greydwarf_Shaman,Aggressive,FALSE,TRUE,TRUE,Black Forest,TRUE,1,60,25,1,1,1
+Greyling,Aggressive,FALSE,FALSE,FALSE,Meadows,FALSE,1,20,5,1,1,1
+Gull,Passive,FALSE,FALSE,FALSE,Meadows,FALSE,1,1,0,1,1,1
+Leech,Aggressive,FALSE,FALSE,TRUE,Swamp,TRUE,1,60,60,1,1,1
+Leviathan,Passive,FALSE,FALSE,FALSE,Ocean,FALSE,1,,0,1,1,1
+Lox,Aggressive,FALSE,FALSE,FALSE,Plains,TRUE,1,1000,130,0.8,1,1.5
+Moder,Boss,FALSE,FALSE,FALSE,Mountain,TRUE,1,7500,180,1,1,2.5
+Neck,Aggressive,FALSE,FALSE,FALSE,Meadows,FALSE,1,5,6,1,1,1
+Oozer,Aggressive,TRUE,FALSE,FALSE,Swamp,FALSE,1,150,90,1,1,1
+Skeleton_Poison,Aggressive,FALSE,FALSE,TRUE,Black Forest,TRUE,1,100,20,1,1,1
+Serpent,Aggressive,FALSE,FALSE,FALSE,Ocean,TRUE,1,400,70,1,1,1
+Skeleton,Aggressive,FALSE,FALSE,FALSE,Black Forest,TRUE,1,40,25,1,1,1
+Stone Golem,Aggressive,FALSE,FALSE,FALSE,Mountain,TRUE,1,800,110,1,1,1.5
+Surtling,Aggressive,FALSE,FALSE,TRUE,Swamp,TRUE,1,20,40,1,1,1
+gd_king,Boss,FALSE,FALSE,FALSE,Black Forest,FALSE,1,2500,70,1,1,1.8
+Troll,Aggressive,FALSE,FALSE,FALSE,Black Forest,TRUE,1,600,70,0.8,1,1.5
+Wolf,Aggressive,FALSE,FALSE,FALSE,Mountain,FALSE,2,80,70,1.5,1.5,0.8
+Wraith,Aggressive,FALSE,FALSE,FALSE,Swamp,FALSE,1,100,60,1,1,1
+GoblinKing,Boss,FALSE,FALSE,FALSE,Plains,FALSE,1,10000,200,1,1,2.5
