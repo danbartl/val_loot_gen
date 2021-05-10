@@ -3,7 +3,7 @@ Blob,Aggressive,TRUE,FALSE,TRUE,Swamp,FALSE,1,50,70,1,1,1.4
 Boar,Aggressive,FALSE,FALSE,FALSE,Meadows,FALSE,1,10,10,1,1,1
 Bonemass,Boss,TRUE,FALSE,FALSE,Swamp,FALSE,1,5000,150,1,1,1.8
 Crow,Passive,FALSE,FALSE,FALSE,Meadows,FALSE,1,1,0,1,1,1
-Deathsquito,Aggressive,FALSE,FALSE,FALSE,Plains,FALSE,3,10,90,2,1.7,0.1
+Deathsquito,Aggressive,FALSE,FALSE,FALSE,Plains,FALSE,3,10,90,2,1.7,0.2
 Deer,Passive,FALSE,FALSE,FALSE,Meadows,FALSE,1,10,0,1,1,1
 Drake,Aggressive,FALSE,FALSE,FALSE,Mountain,FALSE,1,100,90,1,1,1
 Draugr,Aggressive,FALSE,FALSE,FALSE,Swamp,TRUE,1,100,48,1,1,1
