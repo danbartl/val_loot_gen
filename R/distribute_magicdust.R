@@ -77,7 +77,7 @@ creatures2[,rare:=legendaries*conversion_enchantmats^(tiers-1)]
 setorderv(creatures2,"danger")
 
 
-creatures_to_dust <- creatures2[,.(name,stars,hp,effective_hp,damage,rare=round(rare,5),magic_dust=round(0.1+rare,5))]
+creatures_to_dust <- creatures2[,.(name,stars,health,attack_speed,movement_speed,damage,magic_dust=round(0.1+rare,5))]
 
 # creatures_to_dust %>%  tail(100)
 # creatures_to_dust %>%  head(100)
