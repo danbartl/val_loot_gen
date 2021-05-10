@@ -2,7 +2,7 @@ enchantcosts:
   conversion_rate: 5.0
   tiers: 4.0
 drop_count:
-  min_expected_drops: 0.2
+  min_expected_drops: 0.1
   max_expected_drops: 10.0
 drop_value:
   legendary_for_strongest: 8.0
