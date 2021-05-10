@@ -1,5 +1,5 @@
 
-config <- yaml::read_yaml("data/configuration/config.yaml")
+config <- yaml::read_yaml("data/configuration/config.yml")
 
 conversion_enchantmats <- config[["enchantcosts"]][["conversion_rate"]]
 #from lowest to highest rarity across four tiers

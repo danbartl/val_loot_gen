@@ -10,7 +10,7 @@ source("R/distribute_magicdust.R")
 source("R/probcalculator_cleaned.R")
 
 
-inspect_dt <- creatures2[,.(name,stars,hp,effective_hp,movement_speed,attack_speed,damage,rare=round(rare,5),magic_dust=round(0.1+rare,5))]
+inspect_dt <- creatures2[,.(name,stars,hp,effective_hp,movement_speed,attack_speed,damage,magic_dust)]
 inspect_dt[name %like% "Troll$"]
 inspect_dt[name %like% "Greydwarf$"]
 inspect_dt[name %like% "Bonemass$"]

@@ -44,11 +44,12 @@ creatures_edited["Yagluth",damage:=200]
 
 creatures_edited[,movement_speed:=1]
 creatures_edited[name=="Deathsquito",movement_speed:=2]
-creatures_edited[name %in% c("Lox","Troll","Fuling Berserker"),movement_speed:=0.8]
 creatures_edited[name=="Wolf",movement_speed:=1.5]
+creatures_edited[name %in% c("Lox","Troll","Fuling Berserker"),movement_speed:=0.8]
+
 creatures_edited[,attack_speed:=1]
-creatures_edited[name=="Wolf",attack_speed:=1.5]
-creatures_edited[name=="Deathsquito",attack_speed:=1.5]
+creatures_edited[name=="Wolf",attack_speed:=1.6]
+creatures_edited[name=="Deathsquito",attack_speed:=1.7]
 
 #Accuracy is a simple scaling for HP to reduce rewards from HP sponges
 #Especially with path finding issues
@@ -60,7 +61,7 @@ creatures_edited[name %in% c("Blob"),accuracy:=1.4]
 creatures_edited[name %in% c("Stone Golem"),accuracy:=1.5]
 creatures_edited[name %in% c("Moder","Yagluth"),accuracy:=2.5]
 creatures_edited[name=="Deathsquito",accuracy:=0.1]
-creatures_edited[name=="Wolf",accuracy:=0.8]
+creatures_edited[name=="Wolf",accuracy:=0.7]
 
 creatures_edited[name=="Yagluth",name:="GoblinKing"]
 creatures_edited[name=="The Elder",name:="gd_king"]

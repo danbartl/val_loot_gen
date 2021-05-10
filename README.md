@@ -18,7 +18,7 @@
     * Currently only health, damage, movement speed and attack speed are supported
   * Adjust base stats for you creatures in base_creatures.csv
 * You can inspect intermediate results in data/processed
-  * You can find resulting creature level up table in data/processed/creatures_to_dust.csv
+  * You can find resulting creature level up table in data/processed/cllc_levelup.csv
   * You can find resulting creature strength table in data/processed/creatures_to_dust.csv
 * Run master.R and take the loottable file from data/output and put it into your game folder. Currently only available as R scripts, so you need R and ideally Rstudio 
   * https://cran.r-project.org/
