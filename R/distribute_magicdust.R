@@ -22,6 +22,7 @@ creatures2b <- creatures_edited[!is.na(health) & !is.na(damage) & type_behavior!
 
 creatures2 <- merge(creatures2b,level,by=c("name"),all.x=T,allow.cartesian = T,suffixes=c("","_boost"))
 
+creatures2[is.na(attack_speed_boost)]
 
 
 #creatures2[,.N,by=.(usual_biome)]

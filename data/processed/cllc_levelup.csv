@@ -47,7 +47,7 @@ Aggressive,Swamp,Draugr,1,1.05,1.04,2,1.5
 Aggressive,Swamp,Draugr_Elite,1,1.05,1.04,2,1.5
 Boss,Meadows,Eikthyr,1,1.05,1.04,2,1.5
 Aggressive,Mountain,Fenring,1,1.05,1.04,2,1.5
-Passive,Ocean,Fish,1,1.05,1.04,2,1.5
+Passive,Ocean,Fish,1,1,1,1,1
 Aggressive,Plains,Goblin,1,1.05,1.04,2,1.5
 Aggressive,Plains,GoblinBrute,1,1.05,1.04,2,1.5
 Aggressive,Plains,GoblinShaman,1,1.05,1.04,2,1.5
@@ -58,13 +58,13 @@ Aggressive,Black Forest,Greydwarf_Shaman,1,1.05,1.04,2,1.5
 Aggressive,Meadows,Greyling,1,1.05,1.04,2,1.5
 Passive,Meadows,Gull,1,1.05,1.04,2,1.5
 Aggressive,Swamp,Leech,1,1.05,1.04,2,1.5
-Passive,Ocean,Leviathan,1,1.05,1.04,2,1.5
+Passive,Ocean,Leviathan,1,1,1,1,1
 Aggressive,Plains,Lox,1,1.05,1.04,2,1.5
 Boss,Mountain,Moder,1,1.05,1.04,2,1.5
 Aggressive,Meadows,Neck,1,1.05,1.04,2,1.5
 Aggressive,Swamp,Oozer,1,1.05,1.04,2,1.5
 Aggressive,Black Forest,Skeleton_Poison,1,1.05,1.04,2,1.5
-Aggressive,Ocean,Serpent,1,1.05,1.04,2,1.5
+Aggressive,Ocean,Serpent,1,1,1,1,1
 Aggressive,Black Forest,Skeleton,1,1.05,1.04,2,1.5
 Aggressive,Mountain,Stone Golem,1,1.05,1.04,2,1.5
 Aggressive,Swamp,Surtling,1,1.05,1.04,2,1.5
@@ -84,7 +84,7 @@ Aggressive,Swamp,Draugr,2,1.05,1.06,3,2
 Aggressive,Swamp,Draugr_Elite,2,1.05,1.06,3,2
 Boss,Meadows,Eikthyr,2,1.05,1.06,3,2
 Aggressive,Mountain,Fenring,2,1.05,1.06,3,2
-Passive,Ocean,Fish,2,1.05,1.06,3,2
+Passive,Ocean,Fish,2,1,1,1,1
 Aggressive,Plains,Goblin,2,1.05,1.06,3,2
 Aggressive,Plains,GoblinBrute,2,1.05,1.06,3,2
 Aggressive,Plains,GoblinShaman,2,1.05,1.06,3,2
@@ -95,13 +95,13 @@ Aggressive,Black Forest,Greydwarf_Shaman,2,1.05,1.06,3,2
 Aggressive,Meadows,Greyling,2,1.05,1.06,3,2
 Passive,Meadows,Gull,2,1.05,1.06,3,2
 Aggressive,Swamp,Leech,2,1.05,1.06,3,2
-Passive,Ocean,Leviathan,2,1.05,1.06,3,2
+Passive,Ocean,Leviathan,2,1,1,1,1
 Aggressive,Plains,Lox,2,1.05,1.06,3,2
 Boss,Mountain,Moder,2,1.05,1.06,3,2
 Aggressive,Meadows,Neck,2,1.05,1.06,3,2
 Aggressive,Swamp,Oozer,2,1.05,1.06,3,2
 Aggressive,Black Forest,Skeleton_Poison,2,1.05,1.06,3,2
-Aggressive,Ocean,Serpent,2,1.05,1.06,3,2
+Aggressive,Ocean,Serpent,2,1,1,1,1
 Aggressive,Black Forest,Skeleton,2,1.05,1.06,3,2
 Aggressive,Mountain,Stone Golem,2,1.05,1.06,3,2
 Aggressive,Swamp,Surtling,2,1.05,1.06,3,2
@@ -121,7 +121,7 @@ Aggressive,Swamp,Draugr,3,1.1,1.08,3.5,2.5
 Aggressive,Swamp,Draugr_Elite,3,1.1,1.08,3.5,2.5
 Boss,Meadows,Eikthyr,3,1.1,1.08,3.5,2.5
 Aggressive,Mountain,Fenring,3,1.1,1.08,3.5,2.5
-Passive,Ocean,Fish,3,1.1,1.08,3.5,2.5
+Passive,Ocean,Fish,3,1,1,1,1
 Aggressive,Plains,Goblin,3,1.1,1.08,3.5,2.5
 Aggressive,Plains,GoblinBrute,3,1.1,1.08,3.5,2.5
 Aggressive,Plains,GoblinShaman,3,1.1,1.08,3.5,2.5
@@ -132,13 +132,13 @@ Aggressive,Black Forest,Greydwarf_Shaman,3,1.1,1.08,3.5,2.5
 Aggressive,Meadows,Greyling,3,1.1,1.08,3.5,2.5
 Passive,Meadows,Gull,3,1.1,1.08,3.5,2.5
 Aggressive,Swamp,Leech,3,1.1,1.08,3.5,2.5
-Passive,Ocean,Leviathan,3,1.1,1.08,3.5,2.5
+Passive,Ocean,Leviathan,3,1,1,1,1
 Aggressive,Plains,Lox,3,1.1,1.08,3.5,2.5
 Boss,Mountain,Moder,3,1.1,1.08,3.5,2.5
 Aggressive,Meadows,Neck,3,1.1,1.08,3.5,2.5
 Aggressive,Swamp,Oozer,3,1.1,1.08,3.5,2.5
 Aggressive,Black Forest,Skeleton_Poison,3,1.1,1.08,3.5,2.5
-Aggressive,Ocean,Serpent,3,1.1,1.08,3.5,2.5
+Aggressive,Ocean,Serpent,3,1,1,1,1
 Aggressive,Black Forest,Skeleton,3,1.1,1.08,3.5,2.5
 Aggressive,Mountain,Stone Golem,3,1.1,1.08,3.5,2.5
 Aggressive,Swamp,Surtling,3,1.1,1.08,3.5,2.5
@@ -158,7 +158,7 @@ Aggressive,Swamp,Draugr,4,1.1,1.15,4,3
 Aggressive,Swamp,Draugr_Elite,4,1.1,1.15,4,3
 Boss,Meadows,Eikthyr,4,1.1,1.15,4,3
 Aggressive,Mountain,Fenring,4,1.1,1.15,4,3
-Passive,Ocean,Fish,4,1.1,1.15,4,3
+Passive,Ocean,Fish,4,1,1,1,1
 Aggressive,Plains,Goblin,4,1.1,1.15,4,3
 Aggressive,Plains,GoblinBrute,4,1.1,1.15,4,3
 Aggressive,Plains,GoblinShaman,4,1.1,1.15,4,3
@@ -169,13 +169,13 @@ Aggressive,Black Forest,Greydwarf_Shaman,4,1.1,1.15,4,3
 Aggressive,Meadows,Greyling,4,1.1,1.15,4,3
 Passive,Meadows,Gull,4,1.1,1.15,4,3
 Aggressive,Swamp,Leech,4,1.1,1.15,4,3
-Passive,Ocean,Leviathan,4,1.1,1.15,4,3
+Passive,Ocean,Leviathan,4,1,1,1,1
 Aggressive,Plains,Lox,4,1.1,1.15,4,3
 Boss,Mountain,Moder,4,1.1,1.15,4,3
 Aggressive,Meadows,Neck,4,1.1,1.15,4,3
 Aggressive,Swamp,Oozer,4,1.1,1.15,4,3
 Aggressive,Black Forest,Skeleton_Poison,4,1.1,1.15,4,3
-Aggressive,Ocean,Serpent,4,1.1,1.15,4,3
+Aggressive,Ocean,Serpent,4,1,1,1,1
 Aggressive,Black Forest,Skeleton,4,1.1,1.15,4,3
 Aggressive,Mountain,Stone Golem,4,1.1,1.15,4,3
 Aggressive,Swamp,Surtling,4,1.1,1.15,4,3
@@ -195,7 +195,7 @@ Aggressive,Swamp,Draugr,5,1.2,1.25,4.3,3.5
 Aggressive,Swamp,Draugr_Elite,5,1.2,1.25,4.3,3.5
 Boss,Meadows,Eikthyr,5,1.2,1.25,4.3,3.5
 Aggressive,Mountain,Fenring,5,1.2,1.25,4.3,3.5
-Passive,Ocean,Fish,5,1.2,1.25,4.3,3.5
+Passive,Ocean,Fish,5,1,1,1,1
 Aggressive,Plains,Goblin,5,1.2,1.25,4.3,3.5
 Aggressive,Plains,GoblinBrute,5,1.2,1.25,4.3,3.5
 Aggressive,Plains,GoblinShaman,5,1.2,1.25,4.3,3.5
@@ -206,13 +206,13 @@ Aggressive,Black Forest,Greydwarf_Shaman,5,1.2,1.25,4.3,3.5
 Aggressive,Meadows,Greyling,5,1.2,1.25,4.3,3.5
 Passive,Meadows,Gull,5,1.2,1.25,4.3,3.5
 Aggressive,Swamp,Leech,5,1.2,1.25,4.3,3.5
-Passive,Ocean,Leviathan,5,1.2,1.25,4.3,3.5
+Passive,Ocean,Leviathan,5,1,1,1,1
 Aggressive,Plains,Lox,5,1.2,1.25,4.3,3.5
 Boss,Mountain,Moder,5,1.2,1.25,4.3,3.5
 Aggressive,Meadows,Neck,5,1.2,1.25,4.3,3.5
 Aggressive,Swamp,Oozer,5,1.2,1.25,4.3,3.5
 Aggressive,Black Forest,Skeleton_Poison,5,1.2,1.25,4.3,3.5
-Aggressive,Ocean,Serpent,5,1.2,1.25,4.3,3.5
+Aggressive,Ocean,Serpent,5,1,1,1,1
 Aggressive,Black Forest,Skeleton,5,1.2,1.25,4.3,3.5
 Aggressive,Mountain,Stone Golem,5,1.2,1.25,4.3,3.5
 Aggressive,Swamp,Surtling,5,1.2,1.25,4.3,3.5
@@ -232,7 +232,7 @@ Aggressive,Swamp,Draugr,6,1.3,1.3,4.6,4
 Aggressive,Swamp,Draugr_Elite,6,1.3,1.3,4.6,4
 Boss,Meadows,Eikthyr,6,1.3,1.3,4.6,4
 Aggressive,Mountain,Fenring,6,1.3,1.3,4.6,4
-Passive,Ocean,Fish,6,1.3,1.3,4.6,4
+Passive,Ocean,Fish,6,1,1,1,1
 Aggressive,Plains,Goblin,6,1.3,1.3,4.6,4
 Aggressive,Plains,GoblinBrute,6,1.3,1.3,4.6,4
 Aggressive,Plains,GoblinShaman,6,1.3,1.3,4.6,4
@@ -243,13 +243,13 @@ Aggressive,Black Forest,Greydwarf_Shaman,6,1.3,1.3,4.6,4
 Aggressive,Meadows,Greyling,6,1.3,1.3,4.6,4
 Passive,Meadows,Gull,6,1.3,1.3,4.6,4
 Aggressive,Swamp,Leech,6,1.3,1.3,4.6,4
-Passive,Ocean,Leviathan,6,1.3,1.3,4.6,4
+Passive,Ocean,Leviathan,6,1,1,1,1
 Aggressive,Plains,Lox,6,1.3,1.3,4.6,4
 Boss,Mountain,Moder,6,1.3,1.3,4.6,4
 Aggressive,Meadows,Neck,6,1.3,1.3,4.6,4
 Aggressive,Swamp,Oozer,6,1.3,1.3,4.6,4
 Aggressive,Black Forest,Skeleton_Poison,6,1.3,1.3,4.6,4
-Aggressive,Ocean,Serpent,6,1.3,1.3,4.6,4
+Aggressive,Ocean,Serpent,6,1,1,1,1
 Aggressive,Black Forest,Skeleton,6,1.3,1.3,4.6,4
 Aggressive,Mountain,Stone Golem,6,1.3,1.3,4.6,4
 Aggressive,Swamp,Surtling,6,1.3,1.3,4.6,4
@@ -269,7 +269,7 @@ Aggressive,Swamp,Draugr,7,1.35,1.35,4.9,4.5
 Aggressive,Swamp,Draugr_Elite,7,1.35,1.35,4.9,4.5
 Boss,Meadows,Eikthyr,7,1.35,1.35,4.9,4.5
 Aggressive,Mountain,Fenring,7,1.35,1.35,4.9,4.5
-Passive,Ocean,Fish,7,1.35,1.35,4.9,4.5
+Passive,Ocean,Fish,7,1,1,1,1
 Aggressive,Plains,Goblin,7,1.35,1.35,4.9,4.5
 Aggressive,Plains,GoblinBrute,7,1.35,1.35,4.9,4.5
 Aggressive,Plains,GoblinShaman,7,1.35,1.35,4.9,4.5
@@ -280,18 +280,18 @@ Aggressive,Black Forest,Greydwarf_Shaman,7,1.35,1.35,4.9,4.5
 Aggressive,Meadows,Greyling,7,1.35,1.35,4.9,4.5
 Passive,Meadows,Gull,7,1.35,1.35,4.9,4.5
 Aggressive,Swamp,Leech,7,1.35,1.35,4.9,4.5
-Passive,Ocean,Leviathan,7,1.35,1.35,4.9,4.5
+Passive,Ocean,Leviathan,7,1,1,1,1
 Aggressive,Plains,Lox,7,1.35,1.35,4.9,4.5
 Boss,Mountain,Moder,7,1.35,1.35,4.9,4.5
 Aggressive,Meadows,Neck,7,1.35,1.35,4.9,4.5
 Aggressive,Swamp,Oozer,7,1.35,1.35,4.9,4.5
 Aggressive,Black Forest,Skeleton_Poison,7,1.35,1.35,4.9,4.5
-Aggressive,Ocean,Serpent,7,1.35,1.35,4.9,4.5
+Aggressive,Ocean,Serpent,7,1,1,1,1
 Aggressive,Black Forest,Skeleton,7,1.35,1.35,4.9,4.5
 Aggressive,Mountain,Stone Golem,7,1.35,1.35,4.9,4.5
 Aggressive,Swamp,Surtling,7,1.35,1.35,4.9,4.5
 Boss,Black Forest,gd_king,7,1.35,1.35,4.9,4.5
-Aggressive,Black Forest,Troll,7,2,1.35,4.9,4.5
+Aggressive,Black Forest,Troll,7,2,1.6,4.9,4.5
 Aggressive,Mountain,Wolf,7,1.35,1.35,4.9,4.5
 Aggressive,Swamp,Wraith,7,1.35,1.35,4.9,4.5
 Boss,Plains,GoblinKing,7,1.35,1.35,4.9,4.5
@@ -306,7 +306,7 @@ Aggressive,Swamp,Draugr,8,1.38,1.38,5.2,5
 Aggressive,Swamp,Draugr_Elite,8,1.38,1.38,5.2,5
 Boss,Meadows,Eikthyr,8,1.38,1.38,5.2,5
 Aggressive,Mountain,Fenring,8,1.38,1.38,5.2,5
-Passive,Ocean,Fish,8,1.38,1.38,5.2,5
+Passive,Ocean,Fish,8,1,1,1,1
 Aggressive,Plains,Goblin,8,1.38,1.38,5.2,5
 Aggressive,Plains,GoblinBrute,8,1.38,1.38,5.2,5
 Aggressive,Plains,GoblinShaman,8,1.38,1.38,5.2,5
@@ -317,18 +317,18 @@ Aggressive,Black Forest,Greydwarf_Shaman,8,1.38,1.38,5.2,5
 Aggressive,Meadows,Greyling,8,1.38,1.38,5.2,5
 Passive,Meadows,Gull,8,1.38,1.38,5.2,5
 Aggressive,Swamp,Leech,8,1.38,1.38,5.2,5
-Passive,Ocean,Leviathan,8,1.38,1.38,5.2,5
+Passive,Ocean,Leviathan,8,1,1,1,1
 Aggressive,Plains,Lox,8,1.38,1.38,5.2,5
 Boss,Mountain,Moder,8,1.38,1.38,5.2,5
 Aggressive,Meadows,Neck,8,1.38,1.38,5.2,5
 Aggressive,Swamp,Oozer,8,1.38,1.38,5.2,5
 Aggressive,Black Forest,Skeleton_Poison,8,1.38,1.38,5.2,5
-Aggressive,Ocean,Serpent,8,1.38,1.38,5.2,5
+Aggressive,Ocean,Serpent,8,1,1,1,1
 Aggressive,Black Forest,Skeleton,8,1.38,1.38,5.2,5
 Aggressive,Mountain,Stone Golem,8,1.38,1.38,5.2,5
 Aggressive,Swamp,Surtling,8,1.38,1.38,5.2,5
 Boss,Black Forest,gd_king,8,1.38,1.38,5.2,5
-Aggressive,Black Forest,Troll,8,1.38,1.38,5.2,5
+Aggressive,Black Forest,Troll,8,2,1.6,5.2,5
 Aggressive,Mountain,Wolf,8,1.38,1.38,5.2,5
 Aggressive,Swamp,Wraith,8,1.38,1.38,5.2,5
 Boss,Plains,GoblinKing,8,1.38,1.38,5.2,5
@@ -343,7 +343,7 @@ Aggressive,Swamp,Draugr,9,1.38,1.38,5.5,5.5
 Aggressive,Swamp,Draugr_Elite,9,1.38,1.38,5.5,5.5
 Boss,Meadows,Eikthyr,9,1.38,1.38,5.5,5.5
 Aggressive,Mountain,Fenring,9,1.38,1.38,5.5,5.5
-Passive,Ocean,Fish,9,1.38,1.38,5.5,5.5
+Passive,Ocean,Fish,9,1,1,1,1
 Aggressive,Plains,Goblin,9,1.38,1.38,5.5,5.5
 Aggressive,Plains,GoblinBrute,9,1.38,1.38,5.5,5.5
 Aggressive,Plains,GoblinShaman,9,1.38,1.38,5.5,5.5
@@ -354,18 +354,18 @@ Aggressive,Black Forest,Greydwarf_Shaman,9,1.38,1.38,5.5,5.5
 Aggressive,Meadows,Greyling,9,1.38,1.38,5.5,5.5
 Passive,Meadows,Gull,9,1.38,1.38,5.5,5.5
 Aggressive,Swamp,Leech,9,1.38,1.38,5.5,5.5
-Passive,Ocean,Leviathan,9,1.38,1.38,5.5,5.5
+Passive,Ocean,Leviathan,9,1,1,1,1
 Aggressive,Plains,Lox,9,1.38,1.38,5.5,5.5
 Boss,Mountain,Moder,9,1.38,1.38,5.5,5.5
 Aggressive,Meadows,Neck,9,1.38,1.38,5.5,5.5
 Aggressive,Swamp,Oozer,9,1.38,1.38,5.5,5.5
 Aggressive,Black Forest,Skeleton_Poison,9,1.38,1.38,5.5,5.5
-Aggressive,Ocean,Serpent,9,1.38,1.38,5.5,5.5
+Aggressive,Ocean,Serpent,9,1,1,1,1
 Aggressive,Black Forest,Skeleton,9,1.38,1.38,5.5,5.5
 Aggressive,Mountain,Stone Golem,9,1.38,1.38,5.5,5.5
 Aggressive,Swamp,Surtling,9,1.38,1.38,5.5,5.5
 Boss,Black Forest,gd_king,9,1.38,1.38,5.5,5.5
-Aggressive,Black Forest,Troll,9,1.38,1.38,5.5,5.5
+Aggressive,Black Forest,Troll,9,2,1.6,5.5,5.5
 Aggressive,Mountain,Wolf,9,1.38,1.38,5.5,5.5
 Aggressive,Swamp,Wraith,9,1.38,1.38,5.5,5.5
 Boss,Plains,GoblinKing,9,1.38,1.38,5.5,5.5
@@ -380,7 +380,7 @@ Aggressive,Swamp,Draugr,10,1.38,1.38,6,6
 Aggressive,Swamp,Draugr_Elite,10,1.38,1.38,6,6
 Boss,Meadows,Eikthyr,10,1.38,1.38,6,6
 Aggressive,Mountain,Fenring,10,1.38,1.38,6,6
-Passive,Ocean,Fish,10,1.38,1.38,6,6
+Passive,Ocean,Fish,10,1,1,1,1
 Aggressive,Plains,Goblin,10,1.38,1.38,6,6
 Aggressive,Plains,GoblinBrute,10,1.38,1.38,6,6
 Aggressive,Plains,GoblinShaman,10,1.38,1.38,6,6
@@ -391,18 +391,18 @@ Aggressive,Black Forest,Greydwarf_Shaman,10,1.38,1.38,6,6
 Aggressive,Meadows,Greyling,10,1.38,1.38,6,6
 Passive,Meadows,Gull,10,1.38,1.38,6,6
 Aggressive,Swamp,Leech,10,1.38,1.38,6,6
-Passive,Ocean,Leviathan,10,1.38,1.38,6,6
+Passive,Ocean,Leviathan,10,1,1,1,1
 Aggressive,Plains,Lox,10,1.38,1.38,6,6
 Boss,Mountain,Moder,10,1.38,1.38,6,6
 Aggressive,Meadows,Neck,10,1.38,1.38,6,6
 Aggressive,Swamp,Oozer,10,1.38,1.38,6,6
 Aggressive,Black Forest,Skeleton_Poison,10,1.38,1.38,6,6
-Aggressive,Ocean,Serpent,10,1.38,1.38,6,6
+Aggressive,Ocean,Serpent,10,1,1,1,1
 Aggressive,Black Forest,Skeleton,10,1.38,1.38,6,6
 Aggressive,Mountain,Stone Golem,10,1.38,1.38,6,6
 Aggressive,Swamp,Surtling,10,1.38,1.38,6,6
 Boss,Black Forest,gd_king,10,1.38,1.38,6,6
-Aggressive,Black Forest,Troll,10,1.38,1.38,6,6
+Aggressive,Black Forest,Troll,10,2,1.6,6,6
 Aggressive,Mountain,Wolf,10,1.38,1.38,6,6
 Aggressive,Swamp,Wraith,10,1.38,1.38,6,6
 Boss,Plains,GoblinKing,10,1.38,1.38,6,6
