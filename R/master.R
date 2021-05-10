@@ -19,6 +19,8 @@ inspect_dt[name %like% "Deathsquito$"]
 inspect_dt[name %like% "Wolf$"]
 
 
+inspect_dt[,` `:=NA]
+setcolorder(inspect_dt," ")
 
 fwrite(inspect_dt[name %like% "Troll$"],"data/output/examples/troll.csv",sep="|")
 fwrite(inspect_dt[name %like% "Greydwarf$"],"data/output/examples/greydwarf.csv",sep="|")
