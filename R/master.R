@@ -48,6 +48,7 @@ drops_cast[,name:=factor(name,levels = c("Greydwarf","Wolf","Troll","GoblinKing"
 setorderv(target_cast,c("name","stars"))
 setorderv(drops_cast,c("name","stars"))
 
-fwrite(inspect_dt[name %in% c("Troll","Greydwarf","Wolf","GoblinKing")],"data/output/examples/strength.csv",sep="|")
-fwrite(target_cast[name %in% c("Troll","Greydwarf","Wolf","GoblinKing")],"data/output/examples/items.csv",sep="|")
-fwrite(drops_cast[name %in% c("Troll","Greydwarf","Wolf","GoblinKing")],"data/output/examples/drops.csv",sep="|")
+fwrite(inspect_dt[name %in% c("Troll","Greydwarf","Wolf")],"data/output/examples/strength.csv",sep="|")
+fwrite(target_cast[name %in% c("Troll","Greydwarf","Wolf")],"data/output/examples/items.csv",sep="|")
+fwrite(drops_cast[name %in% c("Troll","Greydwarf","Wolf")],"data/output/examples/drops.csv",sep="|")
+

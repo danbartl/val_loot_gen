@@ -1,19 +1,21 @@
-require(yaml)
-require(data.table)
-require(magrittr)
-require(readxl)
-require(stringr)
+
+if (!require('yaml')) install.packages('yaml'); library('yaml')
+if (!require('data.table')) install.packages('data.table'); library('data.table')
+if (!require('magrittr')) install.packages('magrittr'); library('magrittr')
+if (!require('readxl')) install.packages('readxl'); library('readxl')
+if (!require('stringr')) install.packages('stringr'); library('stringr')
+if (!require('rjson')) install.packages('rjson'); library('rjson')
+if (!require('RJSONIO')) install.packages('RJSONIO'); library('RJSONIO')
+if (!require('rlist')) install.packages('rlist'); library('rlist')
+if (!require('zoo')) install.packages('zoo'); library('zoo')
+if (!require('clipr')) install.packages('clipr'); library('clipr')
+if (!require('extraDistr')) install.packages('extraDistr'); library('extraDistr')
+if (!require('readr')) install.packages('readr'); library('readr')
+
 
 
 options(datatable.print.class = T)
 
-
-require("rjson")
-require("RJSONIO")
-require("rlist")
-require("zoo")
-library(magrittr)
-require(clipr)
 
 combineListsAsOne <-function(...){
   return(list(...))

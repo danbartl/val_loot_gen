@@ -1,4 +1,4 @@
-require("extraDistr")
+
 
 creatures_to_dust <- fread("data/processed/creatures_to_dust.csv")
 

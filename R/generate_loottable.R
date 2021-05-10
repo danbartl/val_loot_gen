@@ -19,7 +19,6 @@ valheim_loot9 <- valheim_loot8[,combineListsAsOne(full)][[1]]
 valheim_export <- valheim_loot9  %>%  RJSONIO::toJSON(pretty=TRUE) 
 #roux <- valheim_loot8[1,list(list(Object=Object,LeveledLoot=LeveledLoot)),by=.(Object)] %>%  RJSONIO::toJSON() 
 #roux
-require("readr")
 
 mystring <- read_file("data/raw/loottables_077_edited.json")
 valheim_export <- substring(valheim_export,4,nchar(valheim_export)-2)
