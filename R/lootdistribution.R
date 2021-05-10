@@ -4,7 +4,7 @@ creatures_to_dust <- fread("data/processed/creatures_to_dust.csv")
 
 drop_base <- creatures_to_dust[,.(creature_id=paste0(name,"__",stars),magic_dust)] %>%  unique
 
-drop_base[,expected_count:=0.1+(10-0.1)*sqrt(magic_dust)/drop_base[,max(sqrt(magic_dust))]]
+drop_base[,expected_count:=expected_drops[1]+(expected_drops[2]-expected_drops[1])*sqrt(magic_dust)/drop_base[,max(sqrt(magic_dust))]]
 
 
 count_dt<- data.table(drops=0:(ceiling(max(expected_drops)*1.5)))

@@ -11,6 +11,7 @@
   * Discretized Log Normal Distribution for Loot Table Weight
 
 
+
 ## Instructions:
 * Just adjust everything in the data/configuration folder
   * Set general parameters in config.yml
@@ -32,6 +33,7 @@
 - [ ] Include danger scaling for resistances, infusions, effects
 - [ ] Include treasure chests
 - [ ] Allow for different items than enchanting materiaks
+- [ ] Improve discretization, currently the actual values underestimate, especially for low danger creatures
 
 ## Examples
 
